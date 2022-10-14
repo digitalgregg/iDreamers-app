@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FakeData } from "../../utils/fakeData";
-import classNames from "classNames";
+import classNames from "classnames";
 import CustomSlider from "../CustomSlider";
 
 const container =

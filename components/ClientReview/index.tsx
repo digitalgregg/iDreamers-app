@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { reviewData } from "../../utils/fakeData";
-import classNames from "classNames";
+import classNames from "classnames";
 import Slider from "../Slider";
 
 const ClientReview = () => {

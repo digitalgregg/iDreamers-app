@@ -1,5 +1,5 @@
 import React from "react";
-import classNames from "classNames";
+import classNames from "classnames";
 
 const HeroSection = () => {
     const container = "pl-[240px] pr-[240px]";
