@@ -35,6 +35,7 @@ export const planLocalData = atom({
     storageLimit: "",
     userLimit: "",
 });
+export const currentCount_state = atom<number>(0);
 
 export const TrackersStateHeaderAtom = atom<any>("");
 export const TrackersStateFooterAtom = atom<any>("");

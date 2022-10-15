@@ -54,7 +54,6 @@ const Footer = () => {
                             </button>
                         </div>
                     </div>
-                    {/* <hr className="text-[#ffffff1a] w-[100%] 4xl:w-[1178.95px] hidden lg:flex" /> */}
                     <hr className="my-[40px] bg-[#ffffff1a] opacity-25 hidden lg:block " />
                     <div className="grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-[100%] gap-[40px] md:pt-[89.74px] pb-[50.56px] xs:pb-[62.56px] md:pb-[122.96px] lg:pb-[122.96px] 2xl:pb-[122.96px] 4xl:pb-[80.96px]">
                         <div>
