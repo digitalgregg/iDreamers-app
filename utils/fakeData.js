@@ -66,3 +66,63 @@ export const reviewData = [
         img: "",
     },
 ];
+
+export const imgurl = [
+    {
+        id: 0,
+        url: "/img/screenDemo.svg",
+    },
+    {
+        id: 1,
+        url: "/img/demoimg1.svg",
+    },
+    {
+        id: 2,
+        url: "/img/screenDemo.svg",
+    },
+    {
+        id: 3,
+        url: "/img/demoimg1.svg",
+    },
+    {
+        id: 4,
+        url: "/img/screenDemo.svg",
+    },
+    {
+        id: 5,
+        url: "img/demoimg1.svg",
+    },
+];
+
+export const listItem = [
+    {
+        id: 0,
+        title: "Track and Manage Goal",
+        url: "/img/track.svg",
+    },
+    {
+        id: 1,
+        title: "Communicate with other Dreamers",
+        url: "/img/communicate.svg",
+    },
+    {
+        id: 2,
+        title: "100% Srcure Cloud Platform",
+        url: "/img/secure.svg",
+    },
+    {
+        id: 3,
+        title: "Brainstorm Ideas",
+        url: "/img/brainstorm.svg",
+    },
+    {
+        id: 4,
+        title: "Search Others Dream",
+        url: "/img/searchLogo.svg",
+    },
+    {
+        id: 5,
+        title: "Build Support System",
+        url: "/img/buildlogo.svg",
+    },
+];

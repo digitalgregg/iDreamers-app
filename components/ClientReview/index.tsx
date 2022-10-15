@@ -70,17 +70,24 @@ const ClientReview = () => {
                                                 </div>
                                             </div>
                                             <div className=" flex gap-[15px] justify-center items-center lg:mt-[80px] mt-[50px] mx-auto pb-[50px] lg:pb-[110px">
-                                                {reviewData.map((item) => (
-                                                    <div
-                                                        key={item.id}
-                                                        className={classNames(
-                                                            item.id ===
-                                                                sliderCount
-                                                                ? "w-[16px] h-[16px] rounded-full bg-[#866EE1] "
-                                                                : "w-[8px] h-[8px] rounded-full bg-[#CFC5F3] "
-                                                        )}
-                                                    ></div>
-                                                ))}
+                                                {reviewData.map(
+                                                    (item, index: any) => (
+                                                        <div
+                                                            onClick={() =>
+                                                                setSliderCount(
+                                                                    index
+                                                                )
+                                                            }
+                                                            key={item.id}
+                                                            className={classNames(
+                                                                item.id ===
+                                                                    sliderCount
+                                                                    ? "w-[16px] h-[16px] rounded-full bg-[#866EE1] "
+                                                                    : "w-[8px] h-[8px] rounded-full bg-[#CFC5F3] "
+                                                            )}
+                                                        ></div>
+                                                    )
+                                                )}
                                             </div>
                                         </div>
                                     )}
