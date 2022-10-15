@@ -30,7 +30,6 @@ const titles = [
 const Features = () => {
     const [sliderCount, setSliderCount] = useState();
     const [current,setCurrent] = useAtom(currentCount_state)
-    console.log(current)
     return (
         <div
             className={classNames(
