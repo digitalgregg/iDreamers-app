@@ -11,6 +11,7 @@ import Features from "../components/Features";
 import WeHelp from "../components/WeHelp";
 import GetStarted from "../components/GetStarted";
 import ClientReview from "../components/ClientReview";
+import CreatedBy from "../components/CreatedBy";
 
 const Home: NextPage = () => {
     return (
@@ -27,6 +28,7 @@ const Home: NextPage = () => {
                 <div className="w-[100%] h-auto bg-[#F3F0FC]    ">
                     <Header />
                     <HeroSection />
+                    <CreatedBy />
                 </div>
                 <Features />
                 <WeHelp />

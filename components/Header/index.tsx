@@ -35,7 +35,7 @@ const Header = () => {
         setIsOpen((prevState) => !prevState);
     };
 
-    const container2 = "px-20px md:px-[65px] 2xl:px-[153px] 4xl:px-[239px]";
+    const container2 = "px-[20px] md:px-[65px] 2xl:px-[153px] 4xl:px-[239px]";
     return (
         <nav className=" w-[100%] pt-[46px]">
             <div
