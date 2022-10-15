@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import classNames from "classnames";
 import { imgurl } from "./../../utils/fakeData";
 import HeroMobo from "./../HeroMobo/index";
+import { useRouter } from "next/router";
+import { useSwipeable } from "react-swipeable";
 
 const wrapperDiv =
     "2xl:w-[302px] 2xl:h-[111px] bg-white rounded-[8px]  lg:w-[265px] lg:h-[86px] md:w-[207px] md:h-[62px]  2xl:px-[16px] 2xl:py-[19px] lg:px-[20px] lg:py-[16px] md:px-[10px] md:py-[10px] cursor-pointer";
@@ -10,7 +12,30 @@ const titleStyle =
     "font-semibold 2xl:text-[22px] 2xl:leading-[30.8px] lg:text-[18px] lg:leading-[27px] md:leading-[21px] 2xl:px-4 md:text-[14px]";
 
 const CreatedBy = () => {
+    const router = useRouter();
     const [count, setCount] = useState(0);
+
+    const handlers = useSwipeable({
+        onSwiped: (eventData) => {
+            if (eventData.dir === "Right") {
+                if (count > 0) {
+                    setCount(count - 1);
+                }
+            }
+
+            if (eventData.dir === "Left") {
+                if (count < 5) {
+                    setCount(count + 1);
+                }
+            }
+
+            console.log(eventData.dir);
+        },
+        trackMouse: true,
+        preventScrollOnSwipe: true,
+        // ...config,
+    });
+
     return (
         <div>
             <div className=" w-[100%] mx-auto mt-[130px] md:mt-[110px] pb-[50px] lg:pb-[94px] 2xl:pb-[111px] 4xl:pb-[130px] hidden md:block">
@@ -78,9 +103,12 @@ const CreatedBy = () => {
                                 alt=""
                                 className="2xl:w-[616px] 2xl:h-[618px] lg:w-[379.54px] lg:h-[380.77px] md:w-[249.12px] md:h-[249.93px]"
                             />
-                            <div className="overflow-hidden">
+                            <div
+                                {...handlers}
+                                className="overflow-hidden cursor-pointer"
+                            >
                                 <img
-                                    src="/img/moboTemp.svg"
+                                    src="/img/iphoneImg.svg"
                                     alt=""
                                     className="absolute 2xl:top-[-30px] lg:top-[-80px] md:top-[-50px] lg:right-[15%] 2xl:right-[23%] md:right-[16%] 2xl:w-[331px] 2xl:h-[668px]  z-50 lg:w-[257px] lg:h-[518px] md:w-[168.69px] md:h-[340px]"
                                 />

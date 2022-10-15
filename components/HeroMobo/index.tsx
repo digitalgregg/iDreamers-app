@@ -15,7 +15,7 @@ const HeroMobo = () => {
                     <div className="relative overflow-hidden">
                         <div className="w-[189px] h-[382px] relative pl-[20px]">
                             <img
-                                src="/img/moboTemp.svg"
+                                src="/img/iphoneImg.svg"
                                 className="w-[189px] h-[382px] z-50 absolute  top-0 left-0 absolute "
                                 alt=""
                             />
