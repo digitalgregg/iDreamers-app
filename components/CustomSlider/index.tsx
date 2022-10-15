@@ -1,8 +1,10 @@
+import { useAtom } from "jotai";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
+import { currentCount_state } from "../../state";
 
 const CustomSlider = ({ children, ...props }: any) => {
-    const [current, setCarrent] = useState(0);
+    const [current,setCurrent] = useAtom(currentCount_state)
     const [active, setActive] = useState(false);
     const [currentLength, setCurrentLength] = useState(false);
     const timeout = useRef(null);
@@ -23,14 +25,14 @@ const CustomSlider = ({ children, ...props }: any) => {
             clearTimeout(timeout.current);
         }
         if (current < lastLangth)
-            setCarrent(current === length - 1 ? 0 : current + 1);
+            setCurrent(current === length - 1 ? 0 : current + 1);
     };
 
     const prevSlide = () => {
         if (timeout.current) {
             clearTimeout(timeout.current);
         }
-        if (current > 0) setCarrent(current === 0 ? length - 1 : current - 1);
+        if (current > 0) setCurrent(current === 0 ? length - 1 : current - 1);
     };
     return (
         <div className="w-full ">

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { FakeData } from "../../utils/fakeData";
 import classNames from "classnames";
 import CustomSlider from "../CustomSlider";
+import { currentCount_state } from "../../state";
+import { useAtom } from "jotai";
 
 const container =
     "px-[20px] md:px-[65px] lg:px-[65px] 2xl:px-[144px] 4xl:px-[243px]";
@@ -27,6 +29,8 @@ const titles = [
 
 const Features = () => {
     const [sliderCount, setSliderCount] = useState();
+    const [current,setCurrent] = useAtom(currentCount_state)
+    console.log(current)
     return (
         <div
             className={classNames(
@@ -40,7 +44,7 @@ const Features = () => {
                 </h1>
 
                 <div className="flex flex-col md:flex-row 4xl:gap-[158px] 2xl:gap-[50px] md:gap-[29px] gap-0  border-l-[5px]  md:border-l-0 md:rounded-0   rounded-[2px]  border-[#DBD3F6]">
-                    {titles?.map((title) => (
+                    {titles?.map((title:any) => (
                         <ul
                             key={title.id}
                             className={classNames(
@@ -50,10 +54,11 @@ const Features = () => {
                             )}
                         >
                             <li
+                            onClick={() => setCurrent(title.id)}
                                 className={classNames(
                                     title.id === sliderCount
-                                        ? "md:text-[#866EE1] text-[#866EE1] lg:text-[18px] text-[20px] md:text-[12px] 2xl:text-[20px] 2xl:font-bold py-[12px] px-12 md:px-0"
-                                        : "md:text-[#B6A8ED] lg:text-[18px] text-[20px] md:text-[12px] 2xl:text-[20px] 2xl:font-bold py-[12px] px-12 md:px-0"
+                                        ? "md:text-[#866EE1] cursor-pointer text-[#866EE1] lg:text-[18px] text-[20px] md:text-[12px] 2xl:text-[20px] 2xl:font-bold py-[12px] px-12 md:px-0"
+                                        : "md:text-[#B6A8ED] cursor-pointer lg:text-[18px] text-[20px] md:text-[12px] 2xl:text-[20px] 2xl:font-bold py-[12px] px-12 md:px-0"
                                 )}
                             >
                                 {title?.title}
