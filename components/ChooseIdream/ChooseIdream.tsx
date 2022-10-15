@@ -32,7 +32,7 @@ const ChooseIdream = () => {
                 </p>
             </div>
             <div className="w-[90%] xs:w-[366px] md:w-[625px] lg:w-[883px] mx-auto">
-                <div className="flex items-center justify-evenly xs:justify-between md:justify-evenly">
+                <div className="flex flex-wrap items-center justify-evenly xs:justify-between md:justify-evenly">
                     {dreamData.map((dream) => (
                         <div
                             key={dream.title}
@@ -42,7 +42,7 @@ const ChooseIdream = () => {
                                 <img
                                     src={dream.img}
                                     alt="img"
-                                    className="w-[30px] xs:w-[30px] md:w-[42.47px] lg:w-[60px] h-auto md:mb-[20px]"
+                                    className="md:mt-[10px] w-[30px] h-[30px] xs:w-[30px] xs:h-[30px] md:h-[42.47px] md:w-[42.47px] lg:w-[60px] lg:h-[60px]"
                                 />
                                 <div className="text-center">
                                     <h1 className="text-[18px] xs:text-[24px] md:text-[36px] lg:text-[50px] text-[#866EE1] font-bold">

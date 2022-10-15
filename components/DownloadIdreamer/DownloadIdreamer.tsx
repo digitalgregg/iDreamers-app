@@ -2,7 +2,7 @@ import React from "react";
 
 const DownloadIdreamer = () => {
   return (
-    <div className="w-[100%] flex md:mb-[47px] xs:mb-[50px] lg:mb-[-100px] z-50">
+    <div className="w-[100%] mb-[50px] flex md:mb-[47px] xs:mb-[50px] lg:mb-[-100px] z-50">
       <div className="mx-auto w-[100%] xs:w-[100%] md:w-[638px] lg:w-[894px] xl:w-[894px] 2xl:w-[1136px] 3xl:w-[1136px] 4xl:w-[1136px] md:rounded-[26px] bg-[#E7E2F9] ">
         <div className="px-[30px] pt-[76px] pb-[76px] flex xs:px-[76px] xs:pt-[30px] xs:pb-[30px] md:pb-[0px] md:px-[26px] md:pt-[49px] lg:px-[51px] lg:pt-[136px] 2xl:px-[70px] 2xl:pt-[54.03px] 4xl:pt-[100px] items-center">
           <div>
