@@ -15,7 +15,7 @@ const titles = [
     },
     {
         id: 1,
-        title: "Track & manage yur dream life",
+        title: "Track & manage your dream life",
     },
     {
         id: 2,
@@ -29,7 +29,7 @@ const titles = [
 
 const Features = () => {
     const [sliderCount, setSliderCount] = useState();
-    const [current,setCurrent] = useAtom(currentCount_state)
+    const [current, setCurrent] = useAtom(currentCount_state);
     return (
         <div
             className={classNames(
@@ -43,7 +43,7 @@ const Features = () => {
                 </h1>
 
                 <div className="flex flex-col md:flex-row 4xl:gap-[158px] 2xl:gap-[50px] md:gap-[29px] gap-0  border-l-[5px]  md:border-l-0 md:rounded-0   rounded-[2px]  border-[#DBD3F6]">
-                    {titles?.map((title:any) => (
+                    {titles?.map((title: any) => (
                         <ul
                             key={title.id}
                             className={classNames(
@@ -53,7 +53,7 @@ const Features = () => {
                             )}
                         >
                             <li
-                            onClick={() => setCurrent(title.id)}
+                                onClick={() => setCurrent(title.id)}
                                 className={classNames(
                                     title.id === sliderCount
                                         ? "md:text-[#866EE1] cursor-pointer text-[#866EE1] lg:text-[18px] text-[20px] md:text-[12px] 2xl:text-[20px] 2xl:font-bold py-[12px] px-12 md:px-0"
