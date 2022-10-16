@@ -48,7 +48,7 @@ const MoboGetStarted = () => {
                                 <div className="flex flex-row ">
                                     <div className="w-[64px] h-[64px] bg-[#31265A] rounded-[8px] flex items-center justify-center ml-[-30px] ">
                                         <p className="text-white font-bold text-[36px] px-[5px]">
-                                            02
+                                            {`0${item.id + 1}`}
                                         </p>
                                     </div>
                                     <div className="xs:pl-[61px] pl-[40px]">

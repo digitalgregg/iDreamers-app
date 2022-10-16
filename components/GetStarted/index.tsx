@@ -78,7 +78,7 @@ const GetStarted = () => {
                             <div className="flex flex-col">
                                 <div className="">
                                     <img
-                                        src="/img/track.svg"
+                                        src="/img/trackgoal.svg"
                                         alt=""
                                         className="w-[296px] h-[206px]  md:w-[246px] md:h-[168px] pb-[20px]"
                                     />
@@ -97,7 +97,7 @@ const GetStarted = () => {
                                 {/* second part  */}
                                 <div className=" mt-[80px]">
                                     <img
-                                        src="/img/track.svg"
+                                        src="/img/trackgoal.svg"
                                         alt=""
                                         className="w-[296px] h-[206px]  md:w-[246px] md:h-[168px] pb-[20px]"
                                     />

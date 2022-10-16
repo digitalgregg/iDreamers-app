@@ -14,6 +14,7 @@ const titleStyle =
 const CreatedBy = () => {
     const router = useRouter();
     const [count, setCount] = useState(0);
+    console.log(count, "count.............");
 
     const handlers = useSwipeable({
         onSwiped: (eventData) => {
@@ -33,6 +34,8 @@ const CreatedBy = () => {
         },
         trackMouse: true,
         preventScrollOnSwipe: true,
+        touchEventOptions: { passive: true },
+        delta: 1,
         // ...config,
     });
 
@@ -50,7 +53,14 @@ const CreatedBy = () => {
                         <div className="flex flex-col gap-[98px] md:gap-[62px] justify-end items-end ">
                             <div
                                 onClick={() => setCount(0)}
-                                className={classNames(`${wrapperDiv}`)}
+                                className={classNames(
+                                    `${wrapperDiv}`,
+                                    "2xl:mr-[-15px] md:mr-[-20px] "
+                                )}
+                                style={{
+                                    backgroundColor:
+                                        count === 0 ? "#E7E2F9" : "white",
+                                }}
                             >
                                 <div className="flex 2xl:gap-[8px] lg:gap-[20px]  md:gap-[10px] items-center ">
                                     <img
@@ -66,7 +76,14 @@ const CreatedBy = () => {
 
                             <div
                                 onClick={() => setCount(1)}
-                                className={classNames(`${wrapperDiv}`)}
+                                className={classNames(
+                                    `${wrapperDiv}`,
+                                    "2xl:mr-[46px] md:mr-[11px] lg:mr-[25px]"
+                                )}
+                                style={{
+                                    backgroundColor:
+                                        count === 1 ? "#E7E2F9" : "white",
+                                }}
                             >
                                 <div className="flex 2xl:gap-[8px] lg:gap-[20px] md:gap-[10px] items-center">
                                     <img
@@ -81,7 +98,14 @@ const CreatedBy = () => {
                             </div>
                             <div
                                 onClick={() => setCount(2)}
-                                className={classNames(`${wrapperDiv}`)}
+                                className={classNames(
+                                    `${wrapperDiv}`,
+                                    "2xl:mr-[-15px] md:mr-[-20px]"
+                                )}
+                                style={{
+                                    backgroundColor:
+                                        count === 2 ? "#E7E2F9" : "white",
+                                }}
                             >
                                 <div className="flex 2xl:gap-[8px] lg:gap-[20px] md:gap-[10px] items-center">
                                     <img
@@ -97,16 +121,13 @@ const CreatedBy = () => {
                         </div>
 
                         {/* 2nd section  */}
-                        <div className="relative">
+                        <div {...handlers} className="relative">
                             <img
                                 src="/img/circle.svg"
                                 alt=""
                                 className="2xl:w-[616px] 2xl:h-[618px] lg:w-[379.54px] lg:h-[380.77px] md:w-[249.12px] md:h-[249.93px]"
                             />
-                            <div
-                                {...handlers}
-                                className="overflow-hidden cursor-pointer"
-                            >
+                            <div className="overflow-hidden cursor-pointer">
                                 <img
                                     src="/img/iphoneImg.svg"
                                     alt=""
@@ -127,64 +148,71 @@ const CreatedBy = () => {
                             </div>
                         </div>
                         {/* 3rd section  */}
-                        <div>
-                            <div className="flex flex-col gap-[98px] md:gap-[62px] justify-end items-end">
-                                <div
-                                    onClick={() => setCount(3)}
-                                    className={classNames(`${wrapperDiv}`)}
-                                >
-                                    <div className="flex 2xl:gap-[8px] lg:gap-[20px] md:gap-[10px] items-center">
-                                        <img
-                                            src="/img/track.svg"
-                                            alt=""
-                                            className="2xl:w-[73px] 2xl:h-[73px] lg:w-[39px] lg:h-[39px] w-[30px] h-[30px]"
-                                        />
-                                        <h1
-                                            className={classNames(
-                                                `${titleStyle}`
-                                            )}
-                                        >
-                                            Track and Manage Goal
-                                        </h1>
-                                    </div>
+                        <div className="flex flex-col gap-[98px] md:gap-[62px] justify-start items-start ">
+                            <div
+                                onClick={() => setCount(3)}
+                                className={classNames(
+                                    `${wrapperDiv}`,
+                                    "2xl:ml-[-15px] md:ml-[-20px]"
+                                )}
+                                style={{
+                                    backgroundColor:
+                                        count === 3 ? "#E7E2F9" : "white",
+                                }}
+                            >
+                                <div className="flex 2xl:gap-[8px] lg:gap-[20px] md:gap-[10px] items-center">
+                                    <img
+                                        src="/img/track.svg"
+                                        alt=""
+                                        className="2xl:w-[73px] 2xl:h-[73px] lg:w-[39px] lg:h-[39px] w-[30px] h-[30px]"
+                                    />
+                                    <h1 className={classNames(`${titleStyle}`)}>
+                                        Track and Manage Goal
+                                    </h1>
                                 </div>
-                                <div
-                                    onClick={() => setCount(4)}
-                                    className={classNames(`${wrapperDiv}`)}
-                                >
-                                    <div className="flex 2xl:gap-[8px] lg:gap-[20px] md:gap-[10px] items-center">
-                                        <img
-                                            src="/img/communicate.svg"
-                                            alt=""
-                                            className="2xl:w-[73px] 2xl:h-[73px] lg:w-[39px] lg:h-[39px] w-[30px] h-[30px]"
-                                        />
-                                        <h1
-                                            className={classNames(
-                                                `${titleStyle}`
-                                            )}
-                                        >
-                                            Communicate with other
-                                        </h1>
-                                    </div>
+                            </div>
+                            <div
+                                onClick={() => setCount(4)}
+                                className={classNames(
+                                    `${wrapperDiv}`,
+                                    "2xl:ml-[46px] md:ml-[11px] lg:ml-[25px]"
+                                )}
+                                style={{
+                                    backgroundColor:
+                                        count === 4 ? "#E7E2F9" : "white",
+                                }}
+                            >
+                                <div className="flex 2xl:gap-[8px] lg:gap-[20px] md:gap-[10px] items-center">
+                                    <img
+                                        src="/img/communicate.svg"
+                                        alt=""
+                                        className="2xl:w-[73px] 2xl:h-[73px] lg:w-[39px] lg:h-[39px] w-[30px] h-[30px]"
+                                    />
+                                    <h1 className={classNames(`${titleStyle}`)}>
+                                        Communicate with other
+                                    </h1>
                                 </div>
-                                <div
-                                    onClick={() => setCount(5)}
-                                    className={classNames(`${wrapperDiv}`)}
-                                >
-                                    <div className="flex 2xl:gap-[8px] lg:gap-[20px] md:gap-[10px] items-center">
-                                        <img
-                                            src="/img/secure.svg"
-                                            alt=""
-                                            className="2xl:w-[73px] 2xl:h-[73px] lg:w-[39px] lg:h-[39px] w-[30px] h-[30px]"
-                                        />
-                                        <h1
-                                            className={classNames(
-                                                `${titleStyle}`
-                                            )}
-                                        >
-                                            100% Srcure Cloud Platform
-                                        </h1>
-                                    </div>
+                            </div>
+                            <div
+                                onClick={() => setCount(5)}
+                                className={classNames(
+                                    `${wrapperDiv}`,
+                                    "2xl:ml-[-15px] md:ml-[-20px]"
+                                )}
+                                style={{
+                                    backgroundColor:
+                                        count === 5 ? "#E7E2F9" : "white",
+                                }}
+                            >
+                                <div className="flex 2xl:gap-[8px] lg:gap-[20px] md:gap-[10px] items-center">
+                                    <img
+                                        src="/img/secure.svg"
+                                        alt=""
+                                        className="2xl:w-[73px] 2xl:h-[73px] lg:w-[39px] lg:h-[39px] w-[30px] h-[30px]"
+                                    />
+                                    <h1 className={classNames(`${titleStyle}`)}>
+                                        100% Srcure Cloud Platform
+                                    </h1>
                                 </div>
                             </div>
                         </div>

@@ -8,7 +8,7 @@ export const FakeData = [
     },
     {
         id: 1,
-        title: "Track & manage yur dream life",
+        title: "Track & manage your dream life",
         img: "/img/achiveIcon.svg",
         description1: `Visualizing dreams helps them come true. Don’t forget to also visualize the steps to get you there! iDreamers gives you help in visualizing your dreams –– dreams that might take a few days, a month, or a year or longer to accomplish.`,
         description2: `The visualizations keep your dream front and center –– and if you click on “share,” then others with similar dreams can find you. You can support them, they can support you, and you might end up with some great friends who can walk the path alongside you.`,
