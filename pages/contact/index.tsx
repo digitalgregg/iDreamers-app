@@ -4,7 +4,7 @@ import GetInTouch from "../../components/GetInTouch/GetInTouch";
 import Header from "../../components/Header";
 import Footer from "../../components/Shared/Footer/Footer";
 
-const ContactUs = () => {
+const ContactUs = ({bgColor, topPadding }:any) => {
   return (
     <>
       <div className="lg:bg-[#F3F1FC] bg-transparent lg:mb-[110px] xl:mb-[0px]">
