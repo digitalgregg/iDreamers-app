@@ -26,7 +26,7 @@ const Home: NextPage = () => {
             </Head>
             <main className="w-[100%] mx-auto">
                 <div className="w-[100%] h-auto bg-[#F3F0FC]    ">
-                    <Header />
+                    <Header bgColor="transparent" topPadding="46px" />
                     <HeroSection />
                     <CreatedBy />
                 </div>
