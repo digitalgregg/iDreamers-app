@@ -110,17 +110,17 @@ const Footer = () => {
                                 <img
                                     src="/img/Facebook.svg"
                                     alt="facebook"
-                                    className="w-[26.87px] h-[26.6px]"
+                                    className="w-[26.87px] h-[26.6px] cursor-pointer"
                                 />
                                 <img
                                     src="/img/Instagram.svg"
                                     alt="instagram"
-                                    className="w-[28.21px] h-[22.13px] "
+                                    className="w-[28.21px] h-[22.13px] cursor-pointer"
                                 />
                                 <img
                                     src="/img/Twitter.svg"
                                     alt="twitter"
-                                    className="w-[25.53px] h-[25px]"
+                                    className="w-[25.53px] h-[25px] cursor-pointer"
                                 />
                             </div>
                             <h3 className="font-normal text-[18px] text-[#FFFFFF] leading-[160%] mt-[27px] mb-[24px]">
