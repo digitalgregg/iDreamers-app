@@ -126,3 +126,26 @@ export const listItem = [
         url: "/img/buildlogo.svg",
     },
 ];
+
+export const fakeReview = [
+    {
+        id: 0,
+        img: "/img/greenstar.svg",
+    },
+    {
+        id: 1,
+        img: "/img/greenstar.svg",
+    },
+    {
+        id: 2,
+        img: "/img/greenstar.svg",
+    },
+    {
+        id: 3,
+        img: "/img/greenstar.svg",
+    },
+    {
+        id: 4,
+        img: "/img/graystar.svg",
+    },
+];
