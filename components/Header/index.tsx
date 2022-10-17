@@ -8,17 +8,31 @@ import MoboDraer from "../MoboDraer";
 type NavLinksType = {
     title: ReactNode;
     url: string;
+    navListColor?: string;
+    navListDefaultColor?: string;
 };
 
-const NavList = ({ title, url }: NavLinksType) => {
+const NavList = ({
+    title,
+    url,
+    navListColor,
+    navListDefaultColor,
+}: NavLinksType) => {
     const router = useRouter();
+    console.log("path:", router.asPath, "url:", url);
     return (
         <li className=" cursor-pointer  lg:hover:bg-transparent hover:bg-[#2B2B2B]">
             <Link href={url} className="w-[272px]">
                 <a
+                    style={{
+                        color:
+                            router.asPath === url
+                                ? `${navListColor}`
+                                : `${navListDefaultColor}`,
+                    }}
                     className={` ${
                         router.asPath === url
-                            ? "!text-[#866EE1] text-[16px] !font-normal 4xl:!font-medium cursor-pointer border-b-2 border-[#866EE1]"
+                            ? "text-[16px] !font-normal 4xl:!font-medium cursor-pointer border-b-2 border-[#866EE1]"
                             : "text-[16px] !font-normal 4xl:!font-medium cursor-pointer"
                     } text-[#000000] hover:text-[#e7e5e5] font-semibold text-[16px] `}
                 >
@@ -29,7 +43,12 @@ const NavList = ({ title, url }: NavLinksType) => {
     );
 };
 
-const Header = ({ bgColor, topPadding }: any) => {
+const Header = ({
+    bgColor,
+    topPadding,
+    navListColor,
+    navListDefaultColor,
+}: any) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggleDrawer = () => {
         setIsOpen((prevState) => !prevState);
@@ -60,9 +79,24 @@ const Header = ({ bgColor, topPadding }: any) => {
                 {/* nav item  */}
                 <div className="hidden md:block">
                     <ul className="flex gap-[24px] text-[#ffffff] text-[16px] font-normal 4xl:font-medium cursor-pointer">
-                        <NavList title={"How it works"} url={"/"} />
-                        <NavList title={"Review"} url={"/review"} />
-                        <NavList title={"Contacts"} url={"/contact"} />
+                        <NavList
+                            title={"How it works"}
+                            url={"/"}
+                            navListColor={`${navListColor}`}
+                            navListDefaultColor={`${navListDefaultColor}`}
+                        />
+                        <NavList
+                            title={"Review"}
+                            url={"/review"}
+                            navListColor={`${navListColor}`}
+                            navListDefaultColor={`${navListDefaultColor}`}
+                        />
+                        <NavList
+                            title={"Contacts"}
+                            url={"/contact"}
+                            navListColor={`${navListColor}`}
+                            navListDefaultColor={`${navListDefaultColor}`}
+                        />
                     </ul>
                 </div>
             </div>
