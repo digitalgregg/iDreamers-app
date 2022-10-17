@@ -61,7 +61,7 @@ const Header = () => {
                     <ul className="flex gap-[24px] text-[#ffffff] text-[16px] font-normal 4xl:font-medium cursor-pointer">
                         <NavList title={"How it works"} url={"/"} />
                         <NavList title={"Review"} url={"/review"} />
-                        <NavList title={"Contacts"} url={"/contacts"} />
+                        <NavList title={"Contacts"} url={"/contact"} />
                     </ul>
                 </div>
             </div>
