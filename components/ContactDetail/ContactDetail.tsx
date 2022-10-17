@@ -73,7 +73,7 @@ const ContactDetail = () => {
                       src={icon.img}
                       alt="image"
                       key={icon.id}
-                      className="xs:w-[40px] xs:h-[40px] md:w-[30px] md:h-[30px] lg:w-[26px] lg:h-[26px] 2xl:w-[40px] 2xl:h-[40px]"
+                      className="xs:w-[40px] xs:h-[40px] md:w-[30px] md:h-[30px] lg:w-[26px] lg:h-[26px] 2xl:w-[40px] 2xl:h-[40px] cursor-pointer"
                     />
                   ))}
                 </div>
