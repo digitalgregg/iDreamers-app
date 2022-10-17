@@ -9,7 +9,11 @@ const Review = () => {
     return (
         <div className="w-[100%]">
             <div className="bg-[#F3F0FC] w-[100%] h-[auto]">
-                <Header bgColor="#7253d9" />
+                <Header
+                    bgColor="#7253d9"
+                    navListColor="#FFFFFF"
+                    navListDefaultColor="#FFFFFF"
+                />
                 <DreamersReview />
                 <TrustpilotReview />
             </div>
