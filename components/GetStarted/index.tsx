@@ -9,7 +9,7 @@ const GetStarted = () => {
                     <p className="font-bold text-[#866EE1] text-center pt-[110px] text-[16px] mb-[20px]">
                         HOW IT WORKS
                     </p>
-                    <h1 className="font-extrabold leading-[63.98px] text-[48px] text-[#31265A] text-center mb-[80px]">
+                    <h1 className="font-extrabold leading-[63.98px] text-[24px] xs:text-[24px] md:text-[36px] lg:text-[48px] text-[#31265A] text-center mb-[80px]">
                         Get Started with 4 Easy Steps
                     </h1>
                     <div className="flex gap-[88px] 2xl:gap-[80px] md:gap-[50px] 4xl:w-[838px] justify-center w-full mx-auto">
@@ -97,7 +97,7 @@ const GetStarted = () => {
                                 {/* second part  */}
                                 <div className=" mt-[80px]">
                                     <img
-                                        src="/img/trackgoal.svg"
+                                        src="/img/hand-logo.svg"
                                         alt=""
                                         className="w-[296px] h-[206px]  md:w-[246px] md:h-[168px] pb-[20px]"
                                     />

@@ -10,9 +10,15 @@ import { useQuery } from "react-query";
 const menuItems = [
   {
     id: 0,
-    title: "How it works ",
+    title: "Home",
     // img: "/img/c",
     url: "/",
+  },
+  {
+    id: 0,
+    title: "How it works ",
+    // img: "/img/c",
+    url: "/how-it-works",
   },
   {
     id: 1,
