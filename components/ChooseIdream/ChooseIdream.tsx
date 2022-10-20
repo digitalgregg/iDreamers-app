@@ -42,7 +42,7 @@ const ChooseIdream = () => {
                                 <img
                                     src={dream.img}
                                     alt="img"
-                                    className="md:mt-[10px] w-[30px] h-[30px] xs:w-[30px] xs:h-[30px] md:h-[42.47px] md:w-[42.47px] lg:w-[60px] lg:h-[60px]"
+                                    className="lg:mt-[10px] w-[30px] h-[30px] xs:w-[30px] xs:h-[30px] md:h-[42.47px] md:w-[42.47px] lg:w-[60px] lg:h-[60px]"
                                 />
                                 <div className="text-center">
                                     <h1 className="text-[18px] xs:text-[24px] md:text-[36px] lg:text-[50px] text-[#866EE1] font-bold">

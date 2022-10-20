@@ -80,8 +80,14 @@ const Header = ({
                 <div className="hidden md:block">
                     <ul className="flex gap-[24px] text-[#ffffff] text-[16px] font-normal 4xl:font-medium cursor-pointer">
                         <NavList
-                            title={"How it works"}
+                            title={"Home"}
                             url={"/"}
+                            navListColor={`${navListColor}`}
+                            navListDefaultColor={`${navListDefaultColor}`}
+                        />
+                        <NavList
+                            title={"How it works"}
+                            url={"/how-it-works"}
                             navListColor={`${navListColor}`}
                             navListDefaultColor={`${navListDefaultColor}`}
                         />
