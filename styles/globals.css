@@ -29,4 +29,14 @@ body {
 .modal-scroll::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
 }
+.container1 {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
 
+.container2 {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+} 
