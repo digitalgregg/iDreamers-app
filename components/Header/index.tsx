@@ -107,7 +107,7 @@ const Header = ({
         </div>
       </div>
       <div className="md:hidden">
-        <MoboDraer isOpen={isOpen} toggleDrawer={toggleDrawer} />
+        <MoboDraer isOpen={isOpen} setIsOpen={setIsOpen} toggleDrawer={toggleDrawer} />
       </div>
     </nav>
   );

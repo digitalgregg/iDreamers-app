@@ -34,7 +34,7 @@ const menuItems = [
   },
 ];
 
-const MoboDraer = ({ toggleDrawer, isOpen }: any) => {
+const MoboDraer = ({ toggleDrawer, isOpen,setIsOpen }: any) => {
   const router = useRouter();
   const [userData] = useAtom(signupState);
 
@@ -46,6 +46,7 @@ const MoboDraer = ({ toggleDrawer, isOpen }: any) => {
     }
   };
   const handleOnClick = (item: any) => {
+    setIsOpen(!isOpen)
     router.push(item.url);
   };
   return (
