@@ -1,16 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com";
+import { toast } from "react-toastify";
 
 const GetInTouch = () => {
+  const [loading, setLoading] = useState(false);
+  const input =
+    "w-[100%] h-[48px] md:w-[289px] lg:w-[176.16px] 2xl:w-[269px] 4xl:w-[340px] text-[#4E5256] px-[20px] py-[12px] border border-[#DADADA] rounded-[8px] outline-[#DADADA]";
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm();
-  const input =
-    "w-[100%] h-[48px] md:w-[289px] lg:w-[176.16px] 2xl:w-[269px] 4xl:w-[340px] text-[#4E5256] px-[20px] py-[12px] border border-[#DADADA] rounded-[8px] outline-[#DADADA]";
-  const onSubmit = (data: any) => console.log(data);
+
+  const onSubmit = async (data: any) => {
+    setLoading(true);
+    try {
+      const formData: any = {
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        message: data.message,
+      };
+      await emailjs
+        .send(
+          `${process.env.NEXT_PUBLIC_SERVICE_ID}`,
+          `${process.env.NEXT_PUBLIC_TEMPLATE_ID}`,
+          formData,
+          `${process.env.NEXT_PUBLIC_PUBLIC_KEY}`
+        )
+        .then((data) => {
+          setLoading(false);
+          toast.success("Your request has been submitted!");
+        });
+    } catch (error) {
+      setLoading(false);
+      toast.error("Your request failed!");
+    }
+  };
   return (
     <div className="bg-[#FFFFFF] lg:rounded-[8px] lg:shadow-lg  w-[100%] md:w-[668px] lg:w-[429px] 2xl:w-[638px] 4xl:w-[828px] h-auto">
       <div className="xs:py-[40px] xs:px-[40px] md:px-[40px] lg:px-[23.31px] 2xl:px-[45px] lg:py-[50px]">
@@ -65,7 +93,7 @@ const GetInTouch = () => {
             </div>
           </div>
           <textarea
-            {...(register("message", { required: true }))}
+            {...register("message", { required: true })}
             rows={3}
             cols={3}
             placeholder="Message"
@@ -84,7 +112,8 @@ const GetInTouch = () => {
             style={{ boxShadow: "0px 6px 16px -2px rgba(38, 31, 64, 0.16)" }}
             className="w-[100%] mt-[30px] cursor-pointer md:w-[224px] font-medium  h-[55px] bg-[#866EE1]  border-[#866EE1] rounded-[72px] 2xl:text-[18px] text-[#FFFFFF]"
           >
-            Send Request <span className="text-[20px]">&rarr;</span>
+            {loading ? "Sending..." : "Send Request"}{" "}
+            <span className={`${loading && "hidden"} text-[20px]`}>&rarr;</span>
           </button>
         </form>
       </div>
