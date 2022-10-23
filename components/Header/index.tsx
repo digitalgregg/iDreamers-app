@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import React from "react";
 import { ReactNode, useEffect, useState } from "react";
 import MoboDraer from "../MoboDraer";
-// import MoboDraer from "../MoboDraer";
 
 type NavLinksType = {
   title: ReactNode;
@@ -66,7 +65,7 @@ const Header = ({
             <img
               src="/img/ilogo.svg"
               alt="logo"
-              className="w-[49px] h-[49px] md:w-[65px] md:h-[65px]"
+              className="w-[49px] h-[49px] md:w-[65px] md:h-[65px] cursor-pointer"
             />
           </Link>
         </div>
@@ -96,6 +95,12 @@ const Header = ({
             <NavList
               title={"Review"}
               url={"/review"}
+              navListColor={`${navListColor}`}
+              navListDefaultColor={`${navListDefaultColor}`}
+            />
+            <NavList
+              title={"Blog"}
+              url={"/blog"}
               navListColor={`${navListColor}`}
               navListDefaultColor={`${navListDefaultColor}`}
             />
