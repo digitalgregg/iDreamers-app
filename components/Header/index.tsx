@@ -108,7 +108,7 @@ const Header = ({
           </ul>
         </div>
       </div>
-      <div className="">
+      <div className="md:hidden">
         <MoboDraer
           isOpen={isOpen}
           setIsOpen={setIsOpen}
