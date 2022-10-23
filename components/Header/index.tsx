@@ -62,11 +62,13 @@ const Header = ({
         className={`${container2} w-[100%]  flex items-center justify-between h-[100px]`}
       >
         <div className="">
-          <img
-            src="/img/ilogo.svg"
-            alt="logo"
-            className="w-[49px] h-[49px] md:w-[65px] md:h-[65px]"
-          />
+          <Link href="/">
+            <img
+              src="/img/ilogo.svg"
+              alt="logo"
+              className="w-[49px] h-[49px] md:w-[65px] md:h-[65px]"
+            />
+          </Link>
         </div>
         <div className="md:hidden">
           <img
@@ -106,8 +108,12 @@ const Header = ({
           </ul>
         </div>
       </div>
-      <div className="md:hidden">
-        <MoboDraer isOpen={isOpen} setIsOpen={setIsOpen} toggleDrawer={toggleDrawer} />
+      <div className="">
+        <MoboDraer
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          toggleDrawer={toggleDrawer}
+        />
       </div>
     </nav>
   );
