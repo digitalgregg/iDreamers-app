@@ -16,19 +16,25 @@ const menuItems = [
     url: "/",
   },
   {
-    id: 0,
+    id: 1,
     title: "How it works ",
     // img: "/img/c",
     url: "/how-it-works",
   },
   {
-    id: 1,
+    id: 2,
     title: "Review",
     // img: "/img/.svg",
     url: "/review",
   },
   {
-    id: 2,
+    id: 3,
+    title: "Blog",
+    // img: "/img/.svg",
+    url: "/blog",
+  },
+  {
+    id: 4,
     title: "Contacts",
     // img: "/img/.svg",
     url: "/contact",
@@ -68,6 +74,7 @@ const MoboDraer = ({ toggleDrawer, isOpen, setIsOpen }: any) => {
                 <img
                   src="/img/ilogo.svg"
                   alt="logo"
+                  onClick={() => setIsOpen(!isOpen)}
                   className="w-[49px] h-[49px] md:w-[65px] md:h-[65px] cursor-pointer"
                 />
               </Link>
