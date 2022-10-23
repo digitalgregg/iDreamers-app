@@ -6,6 +6,7 @@ import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import { signupState } from "../../state";
 import { useQuery } from "react-query";
+import  Link  from 'next/link';
 
 const menuItems = [
   {
@@ -34,7 +35,7 @@ const menuItems = [
   },
 ];
 
-const MoboDraer = ({ toggleDrawer, isOpen,setIsOpen }: any) => {
+const MoboDraer = ({ toggleDrawer, isOpen, setIsOpen }: any) => {
   const router = useRouter();
   const [userData] = useAtom(signupState);
 
@@ -46,7 +47,7 @@ const MoboDraer = ({ toggleDrawer, isOpen,setIsOpen }: any) => {
     }
   };
   const handleOnClick = (item: any) => {
-    setIsOpen(!isOpen)
+    setIsOpen(!isOpen);
     router.push(item.url);
   };
   return (
@@ -63,11 +64,13 @@ const MoboDraer = ({ toggleDrawer, isOpen,setIsOpen }: any) => {
         <div className="w-[100%] pb-[30px] container1 text-center drawer text-black text-[16px] font-semibold pt-[36px] relative ">
           <div className="container2">
             <div className="flex items-center justify-between px-[20px]">
-              <img
-                src="/img/ilogo.svg"
-                alt="logo"
-                className="w-[49px] h-[49px] md:w-[65px] md:h-[65px]"
-              />
+              <Link href="/">
+                <img
+                  src="/img/ilogo.svg"
+                  alt="logo"
+                  className="w-[49px] h-[49px] md:w-[65px] md:h-[65px] cursor-pointer"
+                />
+              </Link>
               <img
                 onClick={toggleDrawer}
                 src="/img/cross-icon.svg"
@@ -75,7 +78,7 @@ const MoboDraer = ({ toggleDrawer, isOpen,setIsOpen }: any) => {
                 className="w-[14px] h-[14px] cursor-pointer mb-4"
               />
             </div>
-            <div className="divide-y divide-y-[#31265A] mt-[71px]">
+            <div className="divide-y divide-[#E9ECF0] mt-[71px]">
               {menuItems.map((item: any) => (
                 <div key={item.id}>
                   <ul className="">
