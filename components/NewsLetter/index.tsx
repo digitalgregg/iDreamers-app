@@ -12,6 +12,7 @@ const NewsLetter = ({ status, message, onValidated }: any) => {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(validate),
@@ -21,6 +22,7 @@ const NewsLetter = ({ status, message, onValidated }: any) => {
     try {
       await onValidated({ EMAIL: data.email });
       toast.success("Thank you for subscribing!");
+      reset()
     } catch (error) {
       console.log(error);
     }

@@ -14,20 +14,25 @@ const FooterMenuOne = [
 const FooterMenuTwo = [
   {
     title: "How it works",
+    url:"how-it-works"
   },
   {
     title: "Review",
+    url:"review"
   },
   {
     title: "Contact",
+    url:"contact"
   },
 ];
 const FooterMenuThree = [
   {
     title: "Terms & Conditions",
+    url:"terms-condition"
   },
   {
     title: " Privacy Policy",
+    url:"privacy-policy"
   },
 ];
 
@@ -82,7 +87,7 @@ const Footer = () => {
                 {FooterMenuTwo.map((item, i) => (
                   <li key={i}>
                     <a
-                      href=""
+                      href={item.url}
                       className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px]"
                     >
                       {item.title}
@@ -97,7 +102,7 @@ const Footer = () => {
                 {FooterMenuThree.map((item, i) => (
                   <li key={i}>
                     <a
-                      href=""
+                      href={item.url}
                       className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px]"
                     >
                       {item.title}
