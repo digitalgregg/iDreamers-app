@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 const NewsLetter = ({ status, message, onValidated }: any) => {
+  console.log("message",message,status)
   const validate = Yup.object({
     email: Yup.string().email().required("Enter a valid email!"),
   });
@@ -20,7 +21,7 @@ const NewsLetter = ({ status, message, onValidated }: any) => {
 
   const onSubmit = async (data: any) => {
     try {
-      await onValidated({ EMAIL: data.email });
+      await onValidated({ EMAIL: data.email })
       toast.success("Thank you for subscribing!");
       reset()
     } catch (error) {

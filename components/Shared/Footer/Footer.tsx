@@ -129,15 +129,15 @@ const Footer = () => {
                   className="w-[25.53px] h-[25px] cursor-pointer"
                 />
               </div>
-              <h3 className="font-normal text-[18px] text-[#FFFFFF] leading-[160%] mt-[27px] mb-[24px]">
+              <h3 className="cursor-pointer font-normal text-[18px] text-[#FFFFFF] leading-[160%] mt-[27px] mb-[24px]">
                 Try it out !
               </h3>
               <img
                 src="/img/googleplay.svg"
                 alt="googleplay"
-                className="mb-[33px]"
+                className="cursor-pointer mb-[33px]"
               />
-              <img src="/img/appstore.svg" alt="appstore" />
+              <img src="/img/appstore.svg" alt="appstore" className="cursor-pointer"/>
             </div>
           </div>
         </div>
