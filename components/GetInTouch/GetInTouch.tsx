@@ -11,6 +11,7 @@ const GetInTouch = () => {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -33,6 +34,7 @@ const GetInTouch = () => {
         .then((data) => {
           setLoading(false);
           toast.success("Your request has been submitted!");
+          reset()
         });
     } catch (error) {
       setLoading(false);
