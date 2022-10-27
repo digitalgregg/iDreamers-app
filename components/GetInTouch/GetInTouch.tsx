@@ -32,11 +32,13 @@ const GetInTouch = () => {
           `${process.env.NEXT_PUBLIC_PUBLIC_KEY}`
         )
         .then((data) => {
+          console.log("data",data)
           setLoading(false);
           toast.success("Your request has been submitted!");
           reset()
         });
     } catch (error) {
+      console.log("error",error)
       setLoading(false);
       toast.error("Your request failed!");
     }
