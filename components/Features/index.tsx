@@ -42,14 +42,14 @@ const Features = () => {
                     Features
                 </h1>
 
-                <div className="flex flex-col md:flex-row 4xl:gap-[158px] 2xl:gap-[50px] md:gap-[29px] gap-0  border-l-[5px]  md:border-l-0 md:rounded-0   rounded-[2px]  border-[#DBD3F6]">
+                <div className="flex flex-col md:flex-row 4xl:gap-[158px] 2xl:gap-[50px] md:gap-[29px] gap-0  border-l-[5px]  md:border-l-0 md:rounded-0 rounded-[2px]  border-[#DBD3F6]">
                     {titles?.map((title: any) => (
                         <ul
                             key={title.id}
                             className={classNames(
                                 title.id === sliderCount
-                                    ? "md:border-b-[3px] border-[#866EE1]  z-10 border-l-[5px] md:border-l-0  rounded-[2px] md:rounded-0 ml-[-5px] md:ml-0"
-                                    : "hover:border-[#866EE1] md:border-b-[3px]"
+                                    ? "md:border-b-[3px] border-[#866EE1] z-10 border-l-[5px] md:border-l-0 rounded-[2px] md:rounded-0 ml-[-5px] md:ml-0"
+                                    : "hover:border-[#866EE1] md:border-b-[3px] border-l-[5px] md:border-l-0 ml-[-5px] md:ml-0"
                             )}
                         >
                             <li
