@@ -73,7 +73,7 @@ const Footer = () => {
                   <li key={i}>
                     <a
                       href=""
-                      className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px] hover:text-white"
+                      className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px] hover:text-[#866EE1]"
                     >
                       {item.title}
                     </a>
@@ -88,7 +88,7 @@ const Footer = () => {
                   <li key={i}>
                     <a
                       href={item.url}
-                      className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px] hover:text-white"
+                      className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px] hover:text-[#866EE1]"
                     >
                       {item.title}
                     </a>
@@ -103,7 +103,7 @@ const Footer = () => {
                   <li key={i}>
                     <a
                       href={item.url}
-                      className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px] hover:text-white"
+                      className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px] hover:text-[#866EE1]"
                     >
                       {item.title}
                     </a>

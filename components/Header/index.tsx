@@ -30,11 +30,11 @@ const NavList = ({
                 ? `${navListColor}`
                 : `${navListDefaultColor}`,
           }}
-          className={` ${
+          className={`${
             router.asPath === url
               ? "text-[16px] !font-normal 4xl:!font-medium cursor-pointer border-b-2 border-[#866EE1]"
               : "text-[16px] !font-normal 4xl:!font-medium cursor-pointer"
-          } text-[#000000] font-semibold text-[16px] hover:border-b-2 hover:border-[#866EE1] hover:!text-[#866EE1] `}
+          } ${router.asPath === '/review' && 'border-white hover:border-b-2 hover:!border-white hover:!text-white'} text-[#000000] font-semibold text-[16px] hover:border-b-2 hover:border-[#866EE1] hover:!text-[#866EE1] `}
         >
           {title}
         </a>
