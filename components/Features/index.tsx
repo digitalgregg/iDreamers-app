@@ -48,8 +48,8 @@ const Features = () => {
                             key={title.id}
                             className={classNames(
                                 title.id === sliderCount
-                                    ? " md:border-b-[3px] border-[#866EE1] z-10 border-l-[5px] md:border-l-0  rounded-[2px] md:rounded-0 ml-[-5px] md:ml-0"
-                                    : ""
+                                    ? "md:border-b-[3px] border-[#866EE1]  z-10 border-l-[5px] md:border-l-0  rounded-[2px] md:rounded-0 ml-[-5px] md:ml-0"
+                                    : "hover:border-[#866EE1] md:border-b-[3px]"
                             )}
                         >
                             <li
@@ -57,7 +57,7 @@ const Features = () => {
                                 className={classNames(
                                     title.id === sliderCount
                                         ? "md:text-[#866EE1] cursor-pointer text-[#866EE1] lg:text-[18px] text-[20px] md:text-[12px] 2xl:text-[20px] 2xl:font-bold py-[12px] px-12 md:px-0"
-                                        : "md:text-[#B6A8ED] cursor-pointer lg:text-[18px] text-[20px] md:text-[12px] 2xl:text-[20px] 2xl:font-bold py-[12px] px-12 md:px-0"
+                                        : "md:text-[#B6A8ED] cursor-pointer lg:text-[18px] text-[20px] md:text-[12px] 2xl:text-[20px] 2xl:font-bold py-[12px] px-12 md:px-0 hover:text-[#866EE1]"
                                 )}
                             >
                                 {title?.title}
