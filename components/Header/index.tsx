@@ -19,6 +19,7 @@ const NavList = ({
 }: NavLinksType) => {
   const router = useRouter();
   // console.log("path:", router.asPath, "url:", url);
+  // 866EE1 
   return (
     <li className=" cursor-pointer  lg:hover:bg-transparent hover:bg-[#2B2B2B]">
       <Link href={url} className="w-[272px]">
