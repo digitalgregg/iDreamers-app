@@ -4,7 +4,7 @@ import DownloadIdreamer from "../../components/DownloadIdreamer/DownloadIdreamer
 import GetStarted from "../../components/GetStarted";
 import Header from "../../components/Header";
 import Footer from "../../components/Shared/Footer/Footer";
-
+ 
 const index = () => {
   return (
     <div className="w-[100%]">

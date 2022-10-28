@@ -32,7 +32,7 @@ const GetInTouch = () => {
           `${process.env.NEXT_PUBLIC_PUBLIC_KEY}`
         )
         .then((data) => {
-          console.log("data",data)
+          // console.log("data",data)
           setLoading(false);
           toast.success("Your request has been submitted!");
           reset()
@@ -114,7 +114,7 @@ const GetInTouch = () => {
           <button
             type="submit"
             style={{ boxShadow: "0px 6px 16px -2px rgba(38, 31, 64, 0.16)" }}
-            className="w-[100%] mt-[30px] cursor-pointer md:w-[224px] font-medium  h-[55px] bg-[#866EE1]  border-[#866EE1] rounded-[72px] 2xl:text-[18px] text-[#FFFFFF]"
+            className="w-[100%] mt-[30px] cursor-pointer md:w-[224px] font-medium  h-[55px] bg-[#866EE1] border-[#866EE1] rounded-[72px] 2xl:text-[18px] text-[#FFFFFF] hover:bg-primary"
           >
             {loading ? "Sending..." : "Send Request"}{" "}
             <span className={`${loading && "hidden"} text-[20px]`}>&rarr;</span>

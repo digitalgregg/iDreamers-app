@@ -42,7 +42,7 @@ const NewsLetter = ({ status, message, onValidated }: any) => {
           />
           <button
             type="submit"
-            className="text-[16px] w-[35%] xs:w-[144.87px] xs:text-[16px] md:w-[209.81px] md:text-[20px] lg:w-[217.65px] 4xl:w-[217.65px] 4xl:text-[20px] h-[100%] float-right rounded-[20px] bg-[#F3F1FC] text-[#31265A] font-bold cursor-pointer border border-solid border-inherit"
+            className="text-[16px] w-[35%] xs:w-[144.87px] xs:text-[16px] md:w-[209.81px] md:text-[20px] lg:w-[217.65px] 4xl:w-[217.65px] 4xl:text-[20px] h-[100%] float-right rounded-[20px] bg-[#F3F1FC] text-[#31265A] font-bold cursor-pointer border border-solid border-inherit hover:bg-[#866EE1] hover:text-white transition ease-in-out duration-[300ms]"
           >
             {status === "sending" ? "Sending..." : "Submit"}
           </button>

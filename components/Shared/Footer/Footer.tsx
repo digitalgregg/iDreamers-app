@@ -73,7 +73,7 @@ const Footer = () => {
                   <li key={i}>
                     <a
                       href=""
-                      className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px]"
+                      className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px] hover:text-[#866EE1]"
                     >
                       {item.title}
                     </a>
@@ -88,7 +88,7 @@ const Footer = () => {
                   <li key={i}>
                     <a
                       href={item.url}
-                      className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px]"
+                      className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px] hover:text-[#866EE1]"
                     >
                       {item.title}
                     </a>
@@ -103,7 +103,7 @@ const Footer = () => {
                   <li key={i}>
                     <a
                       href={item.url}
-                      className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px]"
+                      className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px] hover:text-[#866EE1]"
                     >
                       {item.title}
                     </a>
@@ -112,21 +112,21 @@ const Footer = () => {
               </ul>
             </div>
             <div className="">
-              <div className="flex gap-[20px]">
+              <div className="flex items-center gap-[20px]">
                 <img
                   src="/img/Facebook.svg"
                   alt="facebook"
-                  className="w-[26.87px] h-[26.6px] cursor-pointer"
+                  className="w-[26.87px] h-[26.6px] cursor-pointer hover:opacity-50"
                 />
                 <img
                   src="/img/Instagram.svg"
                   alt="instagram"
-                  className="w-[28.21px] h-[22.13px] cursor-pointer"
+                  className="w-[28.21px] h-[22.13px] cursor-pointer hover:opacity-50"
                 />
                 <img
                   src="/img/Twitter.svg"
                   alt="twitter"
-                  className="w-[25.53px] h-[25px] cursor-pointer"
+                  className="w-[25.53px] h-[25px] cursor-pointer hover:opacity-50"
                 />
               </div>
               <h3 className="cursor-pointer font-normal text-[18px] text-[#FFFFFF] leading-[160%] mt-[27px] mb-[24px]">

@@ -55,14 +55,14 @@ const CreatedBy = () => {
                                 onClick={() => setCount(0)}
                                 className={classNames(
                                     `${wrapperDiv}`,
-                                    "2xl:mr-[-15px] md:mr-[-20px] "
+                                    "2xl:mr-[-15px] md:mr-[-20px] hover:!bg-[#E7E2F9]"
                                 )}
                                 style={{
                                     backgroundColor:
                                         count === 0 ? "#E7E2F9" : "white",
                                 }}
                             >
-                                <div className="flex 2xl:gap-[8px] lg:gap-[20px]  md:gap-[10px] items-center ">
+                                <div className="flex 2xl:gap-[8px] lg:gap-[20px] md:gap-[10px] items-center ">
                                     <img
                                         src="/img/brainstorm.svg"
                                         alt=""
@@ -78,7 +78,7 @@ const CreatedBy = () => {
                                 onClick={() => setCount(1)}
                                 className={classNames(
                                     `${wrapperDiv}`,
-                                    "2xl:mr-[46px] md:mr-[11px] lg:mr-[25px]"
+                                    "2xl:mr-[46px] md:mr-[11px] lg:mr-[25px] hover:!bg-[#E7E2F9]"
                                 )}
                                 style={{
                                     backgroundColor:
@@ -100,7 +100,7 @@ const CreatedBy = () => {
                                 onClick={() => setCount(2)}
                                 className={classNames(
                                     `${wrapperDiv}`,
-                                    "2xl:mr-[-15px] md:mr-[-20px]"
+                                    "2xl:mr-[-15px] md:mr-[-20px] hover:!bg-[#E7E2F9]"
                                 )}
                                 style={{
                                     backgroundColor:
@@ -153,7 +153,7 @@ const CreatedBy = () => {
                                 onClick={() => setCount(3)}
                                 className={classNames(
                                     `${wrapperDiv}`,
-                                    "2xl:ml-[-15px] md:ml-[-20px]"
+                                    "2xl:ml-[-15px] md:ml-[-20px] hover:!bg-[#E7E2F9]"
                                 )}
                                 style={{
                                     backgroundColor:
@@ -175,7 +175,7 @@ const CreatedBy = () => {
                                 onClick={() => setCount(4)}
                                 className={classNames(
                                     `${wrapperDiv}`,
-                                    "2xl:ml-[46px] md:ml-[11px] lg:ml-[25px]"
+                                    "2xl:ml-[46px] md:ml-[11px] lg:ml-[25px] hover:!bg-[#E7E2F9]"
                                 )}
                                 style={{
                                     backgroundColor:
@@ -197,7 +197,7 @@ const CreatedBy = () => {
                                 onClick={() => setCount(5)}
                                 className={classNames(
                                     `${wrapperDiv}`,
-                                    "2xl:ml-[-15px] md:ml-[-20px]"
+                                    "2xl:ml-[-15px] md:ml-[-20px] hover:!bg-[#E7E2F9]"
                                 )}
                                 style={{
                                     backgroundColor:
