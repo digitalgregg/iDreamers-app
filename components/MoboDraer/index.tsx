@@ -31,7 +31,7 @@ const menuItems = [
     id: 3,
     title: "Blog",
     // img: "/img/.svg",
-    url: "/blog",
+    url: "https://idreamers-blog.raseltech.com",
   },
   {
     id: 4,
