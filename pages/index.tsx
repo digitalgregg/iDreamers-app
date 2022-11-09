@@ -12,6 +12,7 @@ import WeHelp from "../components/WeHelp";
 import GetStarted from "../components/GetStarted";
 import ClientReview from "../components/ClientReview";
 import CreatedBy from "../components/CreatedBy";
+import TheSolution from "../components/TheSolution";
 
 const Home: NextPage = () => {
     return (
@@ -37,12 +38,15 @@ const Home: NextPage = () => {
                 </div>
                 <Features />
                 <WeHelp />
-                <ChooseIdream />
+                {/* <ChooseIdream /> */}
+                <TheSolution />
                 <GetStarted />
-                <AppScreen />
+                {/* <AppScreen /> */}
                 <ClientReview />
-                <AskQuestion />
-                <DownloadIdreamer />
+                <div className="bg-[#F3F1FC] mt-[60px] lg:mt-[80px] pb-[10px] lg:pb-0">
+                    <AskQuestion />
+                    <DownloadIdreamer />
+                </div>
                 <Footer />
             </main>
         </div>

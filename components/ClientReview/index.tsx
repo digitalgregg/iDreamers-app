@@ -6,8 +6,8 @@ import Slider from "../Slider";
 const ClientReview = () => {
     const [sliderCount, setSliderCount] = useState();
     return (
-        <div className="mt-[50px] lg:mt-[110px] md:mt-[50px] 4xl:mt-[130px] ">
-            <div className="bg-[#F3F0FC] 4xl:w-[1374px] h-auto mx-auto 2xl:w-[1440px] w-[100%] px-[20px]">
+        <div className="">
+            <div className="bg-white 4xl:w-[1374px] h-auto mx-auto 2xl:w-[1440px] w-[100%] px-[20px]">
                 <h1 className="lg:text-[48px] md:text-[36px] lg:leading-[65.57px] md:leading-[49.18px] text-[#31265A] 4xl:font-extrabold 2xl:font-bold lg:pt-[100px] flex justify-center items-center lg:pb-[95px] md:pb-[80px] text-[24px] pb-[40px] pt-[30px] md:pt-[50px] leading-[32.78px] text-center">
                     What Our Clients Say About Us
                 </h1>

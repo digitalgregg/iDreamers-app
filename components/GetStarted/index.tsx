@@ -3,7 +3,7 @@ import MoboGetStarted from "../MoboGetStarted";
 
 const GetStarted = () => {
     return (
-        <div className="w-[100%] 4xl:px-[240px] mx-auto md:mb-[130px] mb-[55px]">
+        <div className="w-[100%] 4xl:px-[240px] mx-auto ">
             <div className="bg-[#F3F0FC]  md:block hidden">
                 <div className="lg:w-[838px] mx-auto pb-[118px]">
                     <p className="font-bold text-[#866EE1] text-center pt-[110px] text-[16px] mb-[20px]">

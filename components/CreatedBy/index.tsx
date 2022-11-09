@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import { useSwipeable } from "react-swipeable";
 
 const wrapperDiv =
-    "2xl:w-[302px] 2xl:h-[111px] bg-white rounded-[8px]  lg:w-[265px] lg:h-[86px] md:w-[207px] md:h-[62px]  2xl:px-[16px] 2xl:py-[19px] lg:px-[20px] lg:py-[16px] md:px-[10px] md:py-[10px] cursor-pointer";
+    "2xl:w-[302px] 2xl:h-[125px] bg-white rounded-[8px]  lg:w-[265px] lg:h-[86px] md:w-[207px] md:h-[62px]  2xl:px-[16px] 2xl:py-[19px] lg:px-[20px] lg:py-[16px] md:px-[10px] md:py-[10px] cursor-pointer";
 
 const titleStyle =
     "font-semibold 2xl:text-[22px] 2xl:leading-[30.8px] lg:text-[18px] lg:leading-[27px] md:leading-[21px] 2xl:px-4 md:text-[14px]";
@@ -41,7 +41,7 @@ const CreatedBy = () => {
 
     return (
         <div>
-            <div className=" w-[100%] mx-auto mt-[130px] md:mt-[110px] pb-[50px] lg:pb-[94px] 2xl:pb-[111px] 4xl:pb-[130px] hidden md:block">
+            <div className=" w-[100%] mx-auto mt-[130px] md:mt-[110px] pb-[80px] lg:pb-[120px] 2xl:pb-[140px] 4xl:pb-[160px] hidden md:block">
                 <div className="">
                     <h1 className="text-[32px] font-normal leading-[41.6px] text-[#31265A] px-[20px] mb-[40px] mx-auto md:w-[400px] lg:w-[580px] md:pb-[110px] text-center lg:text-[48px] lg:leading-[62.4px] 4xl:pb-[76px]">
                         Created by Dreamers.{" "}
@@ -69,7 +69,7 @@ const CreatedBy = () => {
                                         className="2xl:w-[73px] 2xl:h-[73px] lg:w-[39px] lg:h-[39px] w-[30px] h-[30px]"
                                     />
                                     <h1 className={classNames(`${titleStyle}`)}>
-                                        Brainstorm Ideas
+                                        Brainstorm new Ideas
                                     </h1>
                                 </div>
                             </div>
@@ -92,7 +92,7 @@ const CreatedBy = () => {
                                         className="2xl:w-[73px] 2xl:h-[73px] lg:w-[39px] lg:h-[39px] w-[30px] h-[30px]"
                                     />
                                     <h1 className={classNames(`${titleStyle}`)}>
-                                        Search Others Dream
+                                        Support others’ dreams
                                     </h1>
                                 </div>
                             </div>
@@ -167,7 +167,7 @@ const CreatedBy = () => {
                                         className="2xl:w-[73px] 2xl:h-[73px] lg:w-[39px] lg:h-[39px] w-[30px] h-[30px]"
                                     />
                                     <h1 className={classNames(`${titleStyle}`)}>
-                                        Track and Manage Goal
+                                        Track & manage your dreams
                                     </h1>
                                 </div>
                             </div>
@@ -189,7 +189,7 @@ const CreatedBy = () => {
                                         className="2xl:w-[73px] 2xl:h-[73px] lg:w-[39px] lg:h-[39px] w-[30px] h-[30px]"
                                     />
                                     <h1 className={classNames(`${titleStyle}`)}>
-                                        Communicate with other
+                                        Communicate with other Dreamers
                                     </h1>
                                 </div>
                             </div>
@@ -211,7 +211,7 @@ const CreatedBy = () => {
                                         className="2xl:w-[73px] 2xl:h-[73px] lg:w-[39px] lg:h-[39px] w-[30px] h-[30px]"
                                     />
                                     <h1 className={classNames(`${titleStyle}`)}>
-                                        100% Srcure Cloud Platform
+                                        100% Secure Cloud Platform
                                     </h1>
                                 </div>
                             </div>
