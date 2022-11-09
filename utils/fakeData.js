@@ -1,31 +1,31 @@
 export const FakeData = [
     {
         id: 0,
-        title: "Achieve your Dreams",
+        title: "S.M.A.R.T. Dreams",
         img: "/img/achiveIcon.svg",
-        description1: `Visualizing dreams helps them come true. Don’t forget to also visualize the steps to get you there! iDreamers gives you help in visualizing your dreams –– dreams that might take a few days, a month, or a year or longer to accomplish.`,
-        description2: `The visualizations keep your dream front and center –– and if you click on “share,” then others with similar dreams can find you. You can support them, they can support you, and you might end up with some great friends who can walk the path alongside you.`,
+        description1: `S.M.A.R.T. (Specific, Motivational or Measurable, Attainable, Realistic or Relevant, Time-bound) dream setting is a powerful way of motivating yourself to reach your dreams.`,
+        description2: ` Our app helps you create a strategic plan that has clear milestones so you and all your supporters  know exactly how to reach your goal!`,
     },
     {
         id: 1,
         title: "Track & manage your dream life",
         img: "/img/achiveIcon.svg",
-        description1: `Visualizing dreams helps them come true. Don’t forget to also visualize the steps to get you there! iDreamers gives you help in visualizing your dreams –– dreams that might take a few days, a month, or a year or longer to accomplish.`,
-        description2: `The visualizations keep your dream front and center –– and if you click on “share,” then others with similar dreams can find you. You can support them, they can support you, and you might end up with some great friends who can walk the path alongside you.`,
+        description1: `S.M.A.R.T. (Specific, Motivational or Measurable, Attainable, Realistic or Relevant, Time-bound) dream setting is a powerful way of motivating yourself to reach your dreams.`,
+        description2: ` Our app helps you create a strategic plan that has clear milestones so you and all your supporters  know exactly how to reach your goal!`,
     },
     {
         id: 2,
         title: "Support other Dreamers",
         img: "/img/achiveIcon.svg",
-        description1: `Visualizing dreams helps them come true. Don’t forget to also visualize the steps to get you there! iDreamers gives you help in visualizing your dreams –– dreams that might take a few days, a month, or a year or longer to accomplish.`,
-        description2: `The visualizations keep your dream front and center –– and if you click on “share,” then others with similar dreams can find you. You can support them, they can support you, and you might end up with some great friends who can walk the path alongside you.`,
+        description1: `S.M.A.R.T. (Specific, Motivational or Measurable, Attainable, Realistic or Relevant, Time-bound) dream setting is a powerful way of motivating yourself to reach your dreams.`,
+        description2: ` Our app helps you create a strategic plan that has clear milestones so you and all your supporters  know exactly how to reach your goal!`,
     },
     {
         id: 3,
         title: "100% Secure Platform",
         img: "/img/achiveIcon.svg",
-        description1: `Visualizing dreams helps them come true. Don’t forget to also visualize the steps to get you there! iDreamers gives you help in visualizing your dreams –– dreams that might take a few days, a month, or a year or longer to accomplish.`,
-        description2: `The visualizations keep your dream front and center –– and if you click on “share,” then others with similar dreams can find you. You can support them, they can support you, and you might end up with some great friends who can walk the path alongside you.`,
+        description1: `S.M.A.R.T. (Specific, Motivational or Measurable, Attainable, Realistic or Relevant, Time-bound) dream setting is a powerful way of motivating yourself to reach your dreams.`,
+        description2: ` Our app helps you create a strategic plan that has clear milestones so you and all your supporters  know exactly how to reach your goal!`,
     },
 ];
 
@@ -147,5 +147,22 @@ export const fakeReview = [
     {
         id: 4,
         img: "/img/graystar.svg",
+    },
+];
+
+export const solutionData = [
+    {
+        id: 1,
+        description:
+            "Other social apps aren’t really designed to help you accomplish your fantastic dreams!",
+    },
+    {
+        id: 1,
+        description:
+            "Having a dream and NOT seeing it come true can leave you feeling frustrated, stressed, dissatisfied and unhappy",
+    },
+    {
+        id: 1,
+        description: "Why isn’t there a better alternative?",
     },
 ];

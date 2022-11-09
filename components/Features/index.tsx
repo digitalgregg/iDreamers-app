@@ -11,19 +11,19 @@ const container =
 const titles = [
     {
         id: 0,
-        title: "Achieve your Dreams",
+        title: "Structure Your Dreams",
     },
     {
         id: 1,
-        title: "Track & manage your dream life",
+        title: "Fund Your Dreams",
     },
     {
         id: 2,
-        title: "Support other Dreamers",
+        title: "Support Others’ Dreams",
     },
     {
         id: 3,
-        title: "100% Secure Platform",
+        title: "Track & Manage Dreams",
     },
 ];
 
@@ -39,7 +39,7 @@ const Features = () => {
         >
             <div className="relative">
                 <h1 className="4xl:text-[48px] 4xl:font-extrabold text-primary 4xl:leading-[65.57px] md:text-[50px] md:font-bold hidden md:block md:mb-[40px] 4xl:mb-[47px]">
-                    Features
+                    Why iDreamers?
                 </h1>
 
                 <div className="flex flex-col md:flex-row 4xl:gap-[158px] 2xl:gap-[50px] md:gap-[29px] gap-0  border-l-[5px]  md:border-l-0 md:rounded-0 rounded-[2px]  border-[#DBD3F6]">
@@ -49,7 +49,7 @@ const Features = () => {
                             className={classNames(
                                 title.id === sliderCount
                                     ? "md:border-b-[3px] border-[#866EE1] z-10 border-l-[5px] md:border-l-0 rounded-[2px] md:rounded-0 ml-[-5px] md:ml-0"
-                                    : "hover:border-[#866EE1] md:border-b-[3px] border-l-[5px] md:border-l-0 ml-[-5px] md:ml-0"
+                                    : "hover:border-[#866EE1]  border-l-[5px] md:border-l-0 ml-[-5px] md:ml-0"
                             )}
                         >
                             <li
