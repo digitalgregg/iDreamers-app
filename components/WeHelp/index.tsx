@@ -36,16 +36,28 @@ const WeHelp = () => {
                     </p>
                 </div>
                 <div className="mt-[18px] md:mt-[40px] flex gap-[18.66px] lg:gap-[30px] justify-center mb-[50px] lg:mb-[80px]">
-                    <img
-                        src="/img/googleplay.svg"
-                        alt="playstore"
-                        className="w-[100.68px] h-[29.83px] lg:w-[216px] lg:h-[64px] hover:opacity-75 cursor-pointer"
-                    />
-                    <img
-                        src="/img/applestore.svg"
-                        alt="playstore"
-                        className="w-[100.68px] h-[29.83px] lg:w-[216px] lg:h-[64px] hover:opacity-75 cursor-pointer"
-                    />
+                    <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://play.google.com/store/apps/details?id=com.idreamers.system&hl=en_US&gl=US"
+                    >
+                        <img
+                            src="/img/googleplay.svg"
+                            alt="playstore"
+                            className="w-[100.68px] h-[29.83px] lg:w-[216px] lg:h-[64px] hover:opacity-75 cursor-pointer"
+                        />
+                    </a>
+                    <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://apps.apple.com/us/app/idreamers/id1633296747"
+                    >
+                        <img
+                            src="/img/applestore.svg"
+                            alt="playstore"
+                            className="w-[100.68px] h-[29.83px] lg:w-[216px] lg:h-[64px] hover:opacity-75 cursor-pointer"
+                        />
+                    </a>
                 </div>
 
                 <div className="pb-[40px] lg:pb-[100px]"></div>

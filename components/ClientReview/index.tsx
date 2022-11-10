@@ -51,9 +51,11 @@ const ClientReview = () => {
                                                     />
                                                 </div>
                                             </div>
-                                            <p className="4xl:w-[925px] lg:w-[810px] md:w-[600px] mx-auto font-medium lg:text-[20px] text-[16px] lg:leading-[32.4px] text-[#4E5256] mt-[-15px] leading-[25.92px] w-[85%] px-[20px]">
-                                                {item.review}
-                                            </p>
+                                            <div className="4xl:ml-[20px]">
+                                                <p className="4xl:w-[900px]  lg:w-[810px] md:w-[600px] mx-auto font-medium lg:text-[20px] text-[16px] lg:leading-[32.4px] text-[#4E5256] mt-[-15px] leading-[25.92px] w-[85%] px-[20px] ">
+                                                    {item.review}
+                                                </p>
+                                            </div>
                                             <div className="lg:mt-[72px] mt-[43px] flex justify-center items-center gap-[12px]">
                                                 <img
                                                     src="/img/profile.svg"
