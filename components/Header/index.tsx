@@ -118,7 +118,7 @@ const Header = ({
                             href="https://apps.apple.com/us/app/idreamers/id1633296747"
                             target="_blank"
                             rel="noreferrer"
-                            className="w-[171px] h-[40px] bg-[#866EE1] hover:bg-[#634db6] rounded-[10px] text-[16px] font-bold	flex justify-center items-center"
+                            className="w-[171px] h-[40px] bg-[#866EE1] hover:bg-[#674fbe] rounded-[10px] text-[16px] font-bold	flex justify-center items-center"
                         >
                             Download App
                         </a>
