@@ -4,21 +4,21 @@ import { solutionData } from "../../utils/fakeData";
 const TheSolution = () => {
     return (
         <div className="py-[40px] lg:py-[60px] xl:py-[86px] px-[20px]">
-            <div className="flex flex-col  md:flex-row justify-center xl:gap-[87px] md:gap-[40px] lg:gap-[60px] items-center">
+            <div className="flex flex-col  md:flex-row justify-center xl:gap-[87px] 2xl:gap-[97px] md:gap-[20px] lg:gap-[60px] items-center">
                 <img
-                    src="/img/solutonimg.svg"
+                    src="/img/solutonimg.png"
                     alt=""
-                    className="sm:w-[340px] h-[200px] w-[100%]  sm:h-[200px] md:w-[320px] md:h-[250px] lg:w-[500px] h-[389px] lg:h-[360px]"
+                    className="w-[100%] h-[300px] xs:w-[380px] xs:h-[320px] md:w-[250px] md:h-[300px] lg:w-[320px] lg:h-[310px] xl:w-[360px] xl:h-[380px] 2xl:w-[580px] 2xl:h-[410px]"
                 />
-                <div className="w-[100%] text-center md:w-[300px] lg:w-[393px] mt-[20px] md:mt-0">
-                    <h1 className="text-[#31265A] font-semibold text-[40px] xl:text-[50px] md:text-[32px] mb-[8px] xl:mb-[25px] md:text-left md:ml-[-20px] xl:ml-[-25px]">
+                <div className="w-[100%] text-center md:w-[300px] lg:w-[393px] mt-[20px] md:mt-0 ml-[30px] md:ml-0">
+                    <h1 className="text-[#31265A] font-semibold text-[40px] xl:text-[50px] md:text-[32px] mb-[8px] xl:mb-[25px] md:text-left ">
                         The Solution
                     </h1>
-                    <ul className="flex-col felx">
+                    <ul className="flex-col felx px-[20px] w-[100%] xs:w-[400px] md:w-[380px] mx-auto ">
                         {solutionData.map((item, index) => (
                             <li
                                 key={index}
-                                className="md:list-disc text-[14px] xl:text-[16px] text-[#4E5256] py-[6px] lg:py-[12px]"
+                                className="list-disc text-[14px] xl:text-[16px] text-[#4E5256] py-[6px] lg:py-[12px] text-left "
                             >
                                 {item.description}
                             </li>

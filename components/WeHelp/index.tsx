@@ -17,18 +17,20 @@ const WeHelp = () => {
                     <p className="text-[#4E5256] text-[12px] md:text-[14px] lg:text-[16px] md:leading-[21px] font-normal w-[100%] xs:w-[400px] mx-auto md:w-[555px] lg:w-[798px] ">
                         The creators of the iDreamers app made their own dreams
                         come true by{" "}
-                        <span className="font-bold mr-[4px] ml-[4px]">
+                        <span className="font-extrabold mr-[4px] ml-[4px]">
                             writing them down,
                         </span>{" "}
-                        <span className="font-bold mr-[4px] ml-[4px]">
+                        <span className="font-extrabold mr-[4px] ml-[4px]">
                             tracking progress
                         </span>{" "}
                         and
-                        <span className="font-bold mr-[4px] ml-[4px]">
+                        <span className="font-extrabold mr-[4px] ml-[4px]">
                             garnering support for them
                         </span>
                         —and now they want to show{" "}
-                        <span className="font-bold mr-[4px] ml-[4px]">YOU</span>
+                        <span className="font-extrabold mr-[4px] ml-[4px]">
+                            YOU
+                        </span>
                         how to do it and provide a platform and a community to
                         help you!
                     </p>
@@ -37,21 +39,23 @@ const WeHelp = () => {
                     <img
                         src="/img/googleplay.svg"
                         alt="playstore"
-                        className="w-[100.68px] h-[29.83px] lg:w-[216px] lg:h-[64px]"
+                        className="w-[100.68px] h-[29.83px] lg:w-[216px] lg:h-[64px] hover:opacity-75 cursor-pointer"
                     />
                     <img
                         src="/img/applestore.svg"
                         alt="playstore"
-                        className="w-[100.68px] h-[29.83px] lg:w-[216px] lg:h-[64px]"
+                        className="w-[100.68px] h-[29.83px] lg:w-[216px] lg:h-[64px] hover:opacity-75 cursor-pointer"
                     />
                 </div>
+
+                <div className="pb-[40px] lg:pb-[100px]"></div>
                 {/* video iframe   */}
-                <div className="pb-[50px] lg:pb-[110px]">
+                {/* <div className="pb-[50px] lg:pb-[110px]">
                     <iframe
                         className="w-[100%] xs:w-[440px] h-[220px] md:w-[557px] lg:w-[777px] lg:h-[451px] md:h-[323.3px] xs:h-[253.65px] rounded-[24px] mx-auto"
                         src="https://www.youtube.com/embed/tgbNymZ7vqY"
                     ></iframe>
-                </div>
+                </div> */}
             </div>
         </div>
     );
