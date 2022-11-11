@@ -104,7 +104,7 @@ const Header = ({
                         />
                         <NavList
                             title={"Blog"}
-                            url={"https://idreamers-blog.raseltech.com"}
+                            url={"https://blog.idreamers.com"}
                             navListColor={`${navListColor}`}
                             navListDefaultColor={`${navListDefaultColor}`}
                         />

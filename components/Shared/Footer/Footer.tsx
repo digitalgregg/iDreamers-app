@@ -4,7 +4,7 @@ import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 const FooterMenuOne = [
     {
-        title: "hello@idreamers.app",
+        title: "administration@idreamers.com",
     },
     {
         title: "+1-800-123 4567",
@@ -14,7 +14,7 @@ const FooterMenuOne = [
 const FooterMenuTwo = [
     {
         title: "How it works",
-        url: "how-it-works",
+        url: "/",
     },
     {
         title: "Review",
@@ -115,21 +115,27 @@ const Footer = () => {
                         </div>
                         <div className="">
                             <div className="flex items-center gap-[20px]">
-                                <img
-                                    src="/img/Facebook.svg"
-                                    alt="facebook"
-                                    className="w-[26.87px] h-[26.6px] cursor-pointer hover:opacity-50"
-                                />
-                                <img
-                                    src="/img/Instagram.svg"
-                                    alt="instagram"
-                                    className="w-[28.21px] h-[22.13px] cursor-pointer hover:opacity-50"
-                                />
-                                <img
-                                    src="/img/Twitter.svg"
-                                    alt="twitter"
-                                    className="w-[25.53px] h-[25px] cursor-pointer hover:opacity-50"
-                                />
+                                <a href="https://www.facebook.com/iDreamers/">
+                                    <img
+                                        src="/img/Facebook.svg"
+                                        alt="facebook"
+                                        className="w-[26.87px] h-[26.6px] cursor-pointer hover:opacity-[.7] transition-all duration-200"
+                                    />
+                                </a>
+                                <a href="https://www.instagram.com/idreamerscorp/">
+                                    <img
+                                        src="/img/Instagram.svg"
+                                        alt="instagram"
+                                        className="w-[28.21px] h-[22.13px] cursor-pointer hover:opacity-[.7] transition-all duration-200"
+                                    />
+                                </a>
+                                <a href="https://twitter.com/iDreamersLA">
+                                    <img
+                                        src="/img/Twitter.svg"
+                                        alt="twitter"
+                                        className="w-[25.53px] h-[25px] cursor-pointer hover:opacity-[.7] transition-all duration-200"
+                                    />
+                                </a>
                             </div>
                             <h3 className="cursor-pointer font-normal text-[18px] text-[#FFFFFF] leading-[160%] mt-[27px] mb-[24px]">
                                 Try it out !
