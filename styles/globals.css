@@ -40,3 +40,8 @@ body {
     width: 100%;
     overflow: auto;
 } 
+
+
+.terms-privacy-header{
+    @apply md:!text-6xl !text-4xl
+}
