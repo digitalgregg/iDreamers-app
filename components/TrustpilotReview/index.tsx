@@ -6,7 +6,7 @@ import Script from "next/script";
 const TrustpilotReview = () => {
     const fakeData = fakeReview;
     return (
-        <div className="pt-[88px] px-[20px] md:px-[65px] 2xl:px-[153px] 4xl:px-[239px] w-[100%]">
+        <div className="pt-[88px] px-[20px] md:px-[65px] 2xl:px-[153px] 4xl:px-[239px] w-[100%] bg-[#F3F1FC]">
             <div
                 className="trustpilot-widget"
                 data-locale="en-US"

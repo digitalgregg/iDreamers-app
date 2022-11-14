@@ -13,6 +13,7 @@ import GetStarted from "../components/GetStarted";
 import ClientReview from "../components/ClientReview";
 import CreatedBy from "../components/CreatedBy";
 import TheSolution from "../components/TheSolution";
+import Script from "next/script";
 
 const Home: NextPage = () => {
     return (
@@ -25,17 +26,26 @@ const Home: NextPage = () => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+            {/* script tag  */}
+            <Script id="google-tag-manager">
+                {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K9ZR5ZP');`}
+            </Script>
+
             <main className="w-[100%] mx-auto">
-                <div className="w-[100%] h-auto bg-[#F3F0FC]    ">
+                <div className="w-[100%] h-auto bg-[#F3F0FC] sticky top-0 z-50 ">
                     <Header
                         bgColor="transparent"
                         topPadding="46px"
                         navListColor="#866EE1"
                         navListDefaultColor="black"
                     />
-                    <HeroSection />
-                    <CreatedBy />
                 </div>
+                <HeroSection />
+                <CreatedBy />
                 <Features />
                 <WeHelp />
                 {/* <ChooseIdream /> */}

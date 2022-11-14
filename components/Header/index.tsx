@@ -59,7 +59,7 @@ const Header = ({
 
     const container2 = "px-[20px] md:px-[65px] 2xl:px-[153px] 4xl:px-[239px]";
     return (
-        <nav style={{ paddingTop: `${topPadding}` }} className=" w-[100%]">
+        <nav className=" w-[100%]">
             <div
                 style={{ backgroundColor: `${bgColor}` }}
                 className={`${container2} w-[100%]  flex items-center justify-between h-[100px]`}

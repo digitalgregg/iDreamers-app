@@ -7,7 +7,7 @@ const ThankyouPage = () => {
     const splitPath = getPath.split("/")[2];
     console.log(splitPath, "splitPath");
     return (
-        <div className="flex flex-col gap-[30px] lg:gap-[40px] 2xl:gap-[50px] items-center py-[80px] text-[#31265A] text-center px-[20px]">
+        <div className="flex flex-col gap-[30px] lg:gap-[40px] 2xl:gap-[50px] items-center py-[80px] text-[#31265A] text-center px-[20px] bg-[#F3F1FC]">
             <img
                 src="/img/thankyouicon.svg"
                 alt=""
