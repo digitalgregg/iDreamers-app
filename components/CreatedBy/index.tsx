@@ -41,7 +41,7 @@ const CreatedBy = () => {
 
     return (
         <div>
-            <div className=" w-[100%] mx-auto mt-[130px] md:mt-[110px] pb-[80px] lg:pb-[120px] 2xl:pb-[140px] 4xl:pb-[160px] hidden md:block">
+            <div className=" w-[100%] mx-auto pt-[130px] md:pt-[110px] pb-[80px] lg:pb-[120px] 2xl:pb-[140px] 4xl:pb-[160px] hidden md:block bg-[#F3F0FC]">
                 <div className="">
                     <h1 className="text-[32px] font-normal leading-[41.6px] text-[#31265A] px-[20px] mb-[40px] mx-auto md:w-[400px] lg:w-[580px] md:pb-[110px] text-center lg:text-[48px] lg:leading-[62.4px] 4xl:pb-[76px]">
                         Created by Dreamers.{" "}
@@ -131,7 +131,7 @@ const CreatedBy = () => {
                                 <img
                                     src="/img/iphoneImg.svg"
                                     alt=""
-                                    className="absolute 2xl:top-[-30px] lg:top-[-80px] md:top-[-50px] lg:right-[15%] 2xl:right-[23%] md:right-[16%] 2xl:w-[331px] 2xl:h-[668px]  z-50 lg:w-[257px] lg:h-[518px] md:w-[168.69px] md:h-[340px]"
+                                    className="absolute 2xl:top-[-30px] lg:top-[-80px] md:top-[-50px] lg:right-[15%] 2xl:right-[23%] md:right-[16%] 2xl:w-[331px] 2xl:h-[668px]  z-40 lg:w-[257px] lg:h-[518px] md:w-[168.69px] md:h-[340px]"
                                 />
 
                                 {imgurl.map((item: any) => (

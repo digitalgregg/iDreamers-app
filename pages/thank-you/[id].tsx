@@ -9,7 +9,6 @@ import ThankyouPage from "../../components/ThankyouPage";
 const ThankYou: NextPage = () => {
     return (
         <>
-            <Meta title="Thank you - iDreamers App" />
             <Script id="google-tag-manager">
                 {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -18,16 +17,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-K9ZR5ZP');`}
             </Script>
 
-            <div className="bg-[#F3F1FC] w-[100%]">
+            <Meta title="Thank you - iDreamers App" />
+            <div className="bg-[#F3F1FC] w-[100%] sticky top-0 z-50 ">
                 <Header
                     bgColor="#F3F1FC"
                     topPadding="0px"
                     navListColor="#866EE1"
                     navListDefaultColor="black"
                 />
-                <ThankyouPage />
-                <Footer />
             </div>
+            <ThankyouPage />
+            <Footer />
         </>
     );
 };

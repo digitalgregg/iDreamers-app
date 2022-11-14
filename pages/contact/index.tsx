@@ -20,7 +20,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             <Meta title="Contact Us - iDreamers App" />
             <div className="lg:bg-[#F3F1FC] bg-transparent lg:mb-[110px] xl:mb-[0px]">
-                <Header />
+                <div className="sticky top-0 z-50 bg-[#F3F0FC]">
+                    <Header />
+                </div>
                 <div className="py-[50px] xs:py-[50px] md:pt-[26px] md:pb-[80px] lg:py-[105px] 2xl:pt-[105px] 2xl:pb-[110px]">
                     <div className="flex items-center flex-col md:flex-col-reverse lg:flex-row lg:justify-center lg:gap-[33px] 2xl:gap-[65px] 4xl:gap-[170px] px-[20px] md:px-[65px] 2xl:px-[153px] 4xl:px-[239px]">
                         <GetInTouch />

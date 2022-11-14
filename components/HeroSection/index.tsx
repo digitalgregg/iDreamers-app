@@ -6,7 +6,7 @@ const HeroSection = () => {
     return (
         <div
             className={classNames(
-                "mx-w-[1136.86px] lg:gap-[54px] 2xl:gap-[148px] md:gap-[49.61px] flex  justify-center mt-[50px] md:mt-[56px] lg:mt-[69px]  4xl:mt-[93.40px] items-center px-[20px] pb-[40px]"
+                "mx-w-[1136.86px] lg:gap-[54px] 2xl:gap-[148px] md:gap-[49.61px] flex  justify-center pt-[50px] md:pt-[56px] lg:pt-[69px]  4xl:pt-[93.40px] items-center px-[20px] pb-[40px] bg-[#F3F0FC]"
             )}
         >
             <div className="2xl:w-[590px] lg:w-[497px] md:w-[270px]">
@@ -48,7 +48,8 @@ const HeroSection = () => {
                 <img
                     src="/img/heroCoverimg2.png"
                     alt=""
-                    className="2xl:w-[571px] 2xl:h-[501px] md:w-[324.69px] md:h-[300px] lg:w-[343.31px] lg:h-[400px] hidden md:block 2xl:w-[571px] h-[501px]"
+                    className="2xl:w-[571px]  md:w-[324.69px]  lg:w-[343.31px]  hidden md:block 2xl:w-[571px] "
+                    // className="2xl:w-[571px] 2xl:h-[501px] md:w-[324.69px] md:h-[300px] lg:w-[343.31px] lg:h-[400px] hidden md:block 2xl:w-[571px] h-[501px]"
                 />
             </div>
         </div>

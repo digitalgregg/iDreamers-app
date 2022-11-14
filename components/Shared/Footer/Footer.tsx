@@ -6,9 +6,6 @@ const FooterMenuOne = [
     {
         title: "administration@idreamers.com",
     },
-    {
-        title: "+1-800-123 4567",
-    },
 ];
 
 const FooterMenuTwo = [
@@ -61,27 +58,23 @@ const Footer = () => {
                     />
                     <hr className="my-[40px] bg-[#ffffff1a] opacity-25 hidden lg:block " />
                     <div
-                        className="grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-[100%] gap-[40px] 
+                        className="grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 w-[100%] gap-[40px]  place-content-center
                     lg:pt-[89.74px] pb-[50.56px] xs:pb-[62.56px] md:pb-[122.96px] lg:pb-[122.96px] 2xl:pb-[122.96px] 4xl:pb-[80.96px]"
                     >
-                        <div>
+                        <div className="">
                             <img
                                 src="/img/footer-logo.svg"
                                 alt="logo"
                                 className="4xl:w-[75px] 4xl:h-[75px]"
                             />
-                            <ul className="flex flex-col gap-[14px] mt-[26px]">
-                                {FooterMenuOne.map((item, i) => (
-                                    <li key={i}>
-                                        <a
-                                            href=""
-                                            className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px] hover:text-[#866EE1]"
-                                        >
-                                            {item.title}
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
+                            <div className="mt-[26px]">
+                                <a
+                                    href=""
+                                    className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px] hover:text-[#866EE1]"
+                                >
+                                    administration@idreamers.com
+                                </a>
+                            </div>
                         </div>
                         <div className="">
                             <label className={footerMenuHeader}>About</label>
