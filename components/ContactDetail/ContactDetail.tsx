@@ -2,13 +2,13 @@ import Link from "next/link";
 import React from "react";
 
 const contactData = [
-    {
-        id: 0,
-        title: "Phone",
-        description: "+152 534-468-854",
-        img: "/img/phone-img.svg",
-        isSocialIcon: false,
-    },
+    // {
+    //     id: 0,
+    //     title: "Phone",
+    //     description: "+152 534-468-854",
+    //     img: "/img/phone-img.svg",
+    //     isSocialIcon: false,
+    // },
     {
         id: 2,
         title: "Email Us",
@@ -43,8 +43,8 @@ const socialIcon = [
     },
     {
         id: 4,
-        img: "/img/whats-app.svg",
-        link: "/",
+        img: "/img/instraimg.svg",
+        link: "https://www.instagram.com/idreamerscorp/",
     },
 ];
 const ContactDetail = () => {
