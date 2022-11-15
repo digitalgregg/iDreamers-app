@@ -20,7 +20,7 @@ const GooglePlayReview = () => {
             )}
         >
             <Script src="https://apps.elfsight.com/p/platform.js"></Script>
-            <div className="elfsight-app-8fd75ee1-48ba-4f99-9fc4-60062ca9bd3c max-w-[1031px] min-w-[85%] mx-auto"></div>
+            <div className="elfsight-app-a77a34fc-624f-4584-8c03-980467bd9011 max-w-[1031px] min-w-[85%] mx-auto"></div>
         </div>
     );
 };
