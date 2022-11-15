@@ -103,7 +103,8 @@ const NewsLetter = ({ status, message, onValidated }: any) => {
             <div className="mx-auto mb-[50px] xs:mb-[50px] md:mb-[77px] lg:mb-[50px] 4xl:mb-[75.11px]  w-[100%] h-[58px] xs:w-[442.44px] xs:h-[58px] md:w-[637.88px] lg:w-[697px] md:h-[84px] rounded-[20px] ">
                 {/* <div className=" !w-[100%] !h-[58px] !xs:w-[440.44px] !xs:h-[58px] !md:w-[637.88px] !lg:w-[697px] !md:h-[84px] ">
                 </div> */}
-                <div className="klaviyo-form-XZ5PiY"></div>
+                {/* <div className="klaviyo-form-XZ5PiY"></div> */}
+                <div className="klaviyo-form-YhpNJq"></div>
             </div>
             <div className="4xl:pb-[70px] 2xl:pb-[80px] lg:pb-[50px] pb-[50px]"></div>
         </div>

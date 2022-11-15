@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <Script
                 async
                 type="text/javascript"
-                src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UcRzyw"
+                src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=WCuDXq"
             ></Script>
             <Component {...pageProps} />
         </>

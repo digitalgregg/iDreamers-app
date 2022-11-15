@@ -64,14 +64,14 @@ const MoboDraer = ({ toggleDrawer, isOpen, setIsOpen }: any) => {
                 <div className="w-[100%] pb-[30px] container1 text-center drawer text-black text-[16px] font-semibold pt-[36px] relative ">
                     <div className="container2">
                         <div className="flex items-center justify-between px-[20px]">
-                            <Link href="/">
+                            <a href="/">
                                 <img
                                     src="/img/ilogo.svg"
                                     alt="logo"
                                     onClick={() => setIsOpen(!isOpen)}
                                     className="w-[49px] h-[49px] md:w-[65px] md:h-[65px] cursor-pointer"
                                 />
-                            </Link>
+                            </a>
                             <img
                                 onClick={toggleDrawer}
                                 src="/img/cross-icon.svg"

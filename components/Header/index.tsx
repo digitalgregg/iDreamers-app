@@ -21,9 +21,10 @@ const NavList = ({
     // console.log("path:", router.asPath, "url:", url);
     // 866EE1
     return (
-        <li className=" cursor-pointer  lg:hover:bg-transparent hover:bg-[#2B2B2B]">
-            <Link href={url} className="w-[272px]">
+        <li className="   lg:hover:bg-transparent hover:bg-[#2B2B2B]">
+            <div className="">
                 <a
+                    href={url}
                     style={{
                         color:
                             router.asPath === url
@@ -32,8 +33,8 @@ const NavList = ({
                     }}
                     className={`${
                         router.asPath === url
-                            ? "text-[16px] !font-normal 4xl:!font-medium cursor-pointer border-b-2 border-[#866EE1] hover:!text-[#866EE1]"
-                            : "text-[16px] !font-normal 4xl:!font-medium cursor-pointer hover:!text-[#866EE1]"
+                            ? "text-[16px] !font-normal 4xl:!font-medium  border-b-2 border-[#866EE1] hover:!text-[#866EE1]"
+                            : "text-[16px] !font-normal 4xl:!font-medium  hover:!text-[#866EE1] "
                     } ${
                         router.asPath === "/review" &&
                         "border-white hover:border-b-2 hover:!border-white hover:!text-white"
@@ -41,7 +42,7 @@ const NavList = ({
                 >
                     {title}
                 </a>
-            </Link>
+            </div>
         </li>
     );
 };
@@ -65,13 +66,13 @@ const Header = ({
                 className={`${container2} w-[100%]  flex items-center justify-between h-[100px]`}
             >
                 <div className="">
-                    <Link href="/">
+                    <a href="/">
                         <img
                             src="/img/ilogo.svg"
                             alt="logo"
                             className="w-[49px] h-[49px] md:w-[65px] md:h-[65px] cursor-pointer"
                         />
-                    </Link>
+                    </a>
                 </div>
                 <div className="md:hidden">
                     <img
@@ -83,7 +84,7 @@ const Header = ({
                 </div>
                 {/* nav item  */}
                 <div className="hidden md:block">
-                    <ul className="flex gap-[24px] text-[#ffffff] text-[16px] font-normal 4xl:font-medium cursor-pointer items-center ">
+                    <ul className="flex gap-[24px] text-[#ffffff] text-[16px] font-normal 4xl:font-medium  items-center ">
                         {/* <NavList
               title={"Home"}
               url={"/"}

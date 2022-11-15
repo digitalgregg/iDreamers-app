@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import DreamersReview from "./../components/DreamersReview/index";
 import TrustpilotReview from "./../components/TrustpilotReview/index";
@@ -6,6 +6,7 @@ import GooglePlayReview from "./../components/GooglePlayReview/index";
 import Footer from "../components/Shared/Footer/Footer";
 import Meta from "../components/Shared/Footer/Meta";
 import Script from "next/script";
+import { useRouter } from "next/router";
 
 const Review = () => {
     return (

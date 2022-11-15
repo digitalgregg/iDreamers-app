@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NewsLetter from "../../NewsLetter";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
+import { useRouter } from "next/router";
 
 const FooterMenuOne = [
     {
