@@ -33,11 +33,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                         Contact Us
                                     </h2>
                                     <p className="md:text-center lg:text-left font-light text-[16px] leading-[146%] w-[100%]">
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Lorem ipsum dolor sit
-                                        amet, consectetur adipiscing elit. Lorem
-                                        ipsum dolor sit amet, consectetur
-                                        adipiscing elit.
+                                        Contact us directly for more information
+                                        or leave a message below and we&apos;ll
+                                        get right back to you.
                                     </p>
                                 </div>
                                 <div>
