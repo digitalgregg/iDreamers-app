@@ -183,3 +183,14 @@ body {
 .Main__Container-sc-1n4ud0o-0  a {
     z-index: unset!important;
 }
+
+@media screen and (min-device-width: 375px) and (max-device-width: 390px) {
+ .arrow {
+    width: 100px!important
+ }   
+}
+@media screen and (min-device-width: 391px) and (max-device-width: 479px) {
+    .arrow {
+        width: 110px!important
+     }  
+}
