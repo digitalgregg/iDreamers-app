@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Script from "next/script";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
@@ -25,6 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 type="text/javascript"
                 src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=WCuDXq"
             ></Script>
+
             <Component {...pageProps} />
         </>
     );

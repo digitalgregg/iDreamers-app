@@ -3,10 +3,17 @@ import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
 import { useRouter } from "next/router";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const GetInTouch = () => {
     const router = useRouter();
     const [loading, setLoading] = useState(false);
+    const [captchaChecked, setCaptchaChecked] = useState(false);
+
+    const onChangeCaptcha = (value: any) => {
+        setCaptchaChecked(true);
+    };
+
     const input =
         "w-[100%] h-[48px] md:w-[289px] lg:w-[176.16px] 2xl:w-[269px] 4xl:w-[340px] text-[#4E5256] px-[20px] py-[12px] border border-[#DADADA] rounded-[8px] outline-[#DADADA]";
     const {
@@ -20,26 +27,33 @@ const GetInTouch = () => {
     const onSubmit = async (data: any) => {
         setLoading(true);
         try {
-            const formData: any = {
-                name: data.name,
-                email: data.email,
-                phone: data.phone,
-                message: data.message,
-            };
-            await emailjs
-                .send(
-                    `${process.env.NEXT_PUBLIC_SERVICE_ID}`,
-                    `${process.env.NEXT_PUBLIC_TEMPLATE_ID}`,
-                    formData,
-                    `${process.env.NEXT_PUBLIC_PUBLIC_KEY}`
-                )
-                .then((data) => {
-                    // console.log("data",data)
-                    setLoading(false);
-                    toast.success("Your request has been submitted!");
-                    reset();
-                    router.push("/thank-you/message-recieved");
-                });
+            if (captchaChecked === true) {
+                const formData: any = {
+                    name: data.name,
+                    email: data.email,
+                    phone: data.phone,
+                    message: data.message,
+                };
+                await emailjs
+                    .send(
+                        `${process.env.NEXT_PUBLIC_SERVICE_ID}`,
+                        `${process.env.NEXT_PUBLIC_TEMPLATE_ID}`,
+                        formData,
+                        `${process.env.NEXT_PUBLIC_PUBLIC_KEY}`
+                    )
+                    .then((data) => {
+                        // console.log("data",data)
+                        setLoading(false);
+                        toast.success("Your request has been submitted!");
+                        reset();
+                        router.push("/thank-you/message-recieved");
+                    });
+            } else {
+                toast.error(
+                    "Before send the request fill the reCAPTCHA first !"
+                );
+                setLoading(false);
+            }
         } catch (error) {
             console.log("error", error);
             setLoading(false);
@@ -116,6 +130,14 @@ const GetInTouch = () => {
                             Message is required
                         </h3>
                     )}
+
+                    <div className="mt-4">
+                        <ReCAPTCHA
+                            sitekey={`${process.env.NEXT_PUBLIC_SITE_KEY}`}
+                            onChange={onChangeCaptcha}
+                        />
+                    </div>
+
                     <button
                         type="submit"
                         style={{
