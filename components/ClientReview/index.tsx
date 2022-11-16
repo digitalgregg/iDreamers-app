@@ -25,7 +25,7 @@ const ClientReview = () => {
                                 >
                                     {index === sliderCount && (
                                         <div className="">
-                                            <div className="flex justify-between 4xl:w-[1000px] 2xl:w-[890px] lg:w-[900px] md:w-[620px] w-[90%] mx-auto">
+                                            <div className="flex justify-between 4xl:w-[990px] 2xl:w-[920px] xl:w-[900px] lg:w-[820px] md:w-[620px] w-[90%] mx-auto">
                                                 <div className="flex flex-row lg:gap-[12px] md:gap-[5.95px]">
                                                     <img
                                                         src="/img/upperArrow.svg"

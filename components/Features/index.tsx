@@ -37,12 +37,12 @@ const Features = () => {
                 `${container}`
             )}
         >
-            <div className="relative">
+            <div className="relative md:w-[645px] lg:w-[900px] 2xl:w-[1168px] 4xl:w-[1440px] mx-auto">
                 <h1 className="4xl:text-[48px] 4xl:font-extrabold text-primary 4xl:leading-[65.57px] md:text-[50px] md:font-bold hidden md:block md:mb-[40px] 4xl:mb-[47px]">
                     Why iDreamers?
                 </h1>
 
-                <div className="flex flex-col md:flex-row 4xl:gap-[158px] 2xl:gap-[50px] md:gap-[29px] gap-0  border-l-[5px]  md:border-l-0 md:rounded-0 rounded-[2px]  border-[#DBD3F6]">
+                <div className="flex flex-col md:flex-row 4xl:gap-[205px] 2xl:gap-[110px] md:gap-[49px] lg:gap-[53px] gap-0  border-l-[5px]  md:border-l-0 md:rounded-0 rounded-[2px]  border-[#DBD3F6]">
                     {titles?.map((title: any) => (
                         <ul
                             key={title.id}
@@ -64,8 +64,8 @@ const Features = () => {
                             </li>
                         </ul>
                     ))}
+                    <div className="border-b-[2px] -z-10  border-[#E9ECF0] w-[638px] lg:w-[900px] 2xl:w-[1150px] 4xl:w-[1440px] h-[4px] absolute bottom-[0px] left-0 hidden md:block"></div>
                 </div>
-                <div className="border-b-[2px] -z-10  border-[#E9ECF0] w-[623px] lg:w-[900px] 2xl:w-[1100px] 4xl:w-[1440px] h-[4px] absolute bottom-[0px] left-0 hidden md:block"></div>
             </div>
             <CustomSlider
                 // label="idreamers"
