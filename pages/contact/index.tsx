@@ -18,7 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-K9ZR5ZP');`}
             </Script>
 
-            <Meta title="Contact Us - iDreamers App" />
+            <Meta title="Contact Us - iDreamers Corp" />
             <div className="sticky top-0 z-50 bg-[#F3F0FC]">
                 <Header />
             </div>
