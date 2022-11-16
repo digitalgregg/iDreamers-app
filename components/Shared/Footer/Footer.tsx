@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 
 const FooterMenuOne = [
     {
-        title: "administration@idreamers.com",
+        title: "Email us",
     },
 ];
 
@@ -59,7 +59,7 @@ const Footer = () => {
                     />
                     <hr className="my-[40px] bg-[#ffffff1a] opacity-25 hidden lg:block " />
                     <div
-                        className="grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 w-[100%] gap-[40px]  place-content-center
+                        className="grid grid-cols-1 xs:grid-cols-2  md:grid-cols-3 lg:grid-cols-4  w-[100%] gap-[40px]  place-content-center
                     lg:pt-[89.74px] pb-[50.56px] xs:pb-[62.56px] md:pb-[122.96px] lg:pb-[122.96px] 2xl:pb-[122.96px] 4xl:pb-[80.96px]"
                     >
                         <div className="">
@@ -70,10 +70,10 @@ const Footer = () => {
                             />
                             <div className="mt-[26px]">
                                 <a
-                                    href=""
+                                    href="mailto:administration@idreamers.com"
                                     className="text-[#ffffff80] text-[20px] font-normal 4xl:leading-[28px] hover:text-[#866EE1]"
                                 >
-                                    administration@idreamers.com
+                                    Email us
                                 </a>
                             </div>
                         </div>

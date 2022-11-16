@@ -16,7 +16,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-K9ZR5ZP');`}
             </Script>
 
-            <Meta title="Terms & Conditions - iDreamers App" />
+            <Meta title="Terms & Conditions - iDreamers Corp" />
             <div className="sticky top-0 z-50 ">
                 <Header
                     bgColor="#DBD4F6"

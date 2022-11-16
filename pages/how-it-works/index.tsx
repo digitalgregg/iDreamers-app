@@ -19,7 +19,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </Script>
 
             <div className="w-[100%]">
-                <Meta title="How it works - iDreamers App" />
+                <Meta title="How it works - iDreamers Corp" />
                 <div className="w-[100%] h-auto bg-[#F3F0FC]">
                     <Header
                         bgColor="#DBD4F6"

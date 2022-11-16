@@ -6,10 +6,10 @@ const HeroSection = () => {
     return (
         <div
             className={classNames(
-                "mx-w-[1136.86px] lg:gap-[54px] 2xl:gap-[148px] md:gap-[49.61px] flex  justify-center pt-[50px] md:pt-[56px] lg:pt-[69px]  4xl:pt-[93.40px] items-center px-[20px] pb-[40px] bg-[#F3F0FC]"
+                "mx-w-[1136.86px] lg:gap-[92px] 2xl:gap-[113px] md:gap-[49.61px] flex  justify-center pt-[50px] md:pt-[56px] lg:pt-[69px]  4xl:pt-[93.40px] items-center px-[20px] pb-[40px] bg-[#F3F0FC]"
             )}
         >
-            <div className="2xl:w-[590px] lg:w-[497px] md:w-[270px]">
+            <div className="2xl:w-[456px] lg:w-[313px] md:w-[270px]">
                 <h1 className="font-normal 2xl:text-[70px] lg:text-[48px] md:text-[32px] lg:leading-[61.63px] 2xl:leading-[89.88px] text-[#31265A] mb-[40px] text-[32px] leading-[41.09px]">
                     Create, Track & Accomplish{" "}
                     <span className="font-extrabold"> Your Dreams.</span>
@@ -19,7 +19,7 @@ const HeroSection = () => {
                     dream about, iDreamers will provide you the resources and
                     help you find supporters, too make it a reality!
                 </p> */}
-                <div className="flex 2xl:gap-[40px] md:gap-[18.64px] gap-[18.64px]">
+                <div className="flex 2xl:gap-[40px] md:gap-[18.64px] gap-[18.64px] lg:gap-[28.45px]">
                     <a
                         href="https://apps.apple.com/us/app/idreamers/id1633296747"
                         rel="noreferrer"
@@ -28,7 +28,7 @@ const HeroSection = () => {
                         <img
                             src="/img/applestore.svg"
                             alt=""
-                            className="2xl:w-[216px] 2xl:h-[64px] md:w-[100.68px] md:h-[29.83px] w-[100.68px] h-[29.83px] cursor-pointer hover:opacity-75"
+                            className="2xl:w-[216px] 2xl:h-[64px] md:w-[100.68px] lg:w-[153px] lg:h-[45px] md:h-[29.83px] w-[100.68px] h-[29.83px] cursor-pointer hover:opacity-75"
                         />
                     </a>
                     <a
@@ -39,7 +39,7 @@ const HeroSection = () => {
                         <img
                             src="/img/googleplay.svg"
                             alt=""
-                            className="2xl:w-[216px] 2xl:h-[64px] md:w-[100.68px] md:h-[29.83px]  w-[100.68px] h-[29.83px] cursor-pointer hover:opacity-75"
+                            className="2xl:w-[216px] 2xl:h-[64px] md:w-[100.68px] md:h-[29.83px] lg:w-[153px] lg:h-[45px]  w-[100.68px] h-[29.83px] cursor-pointer hover:opacity-75"
                         />
                     </a>
                 </div>
@@ -48,7 +48,7 @@ const HeroSection = () => {
                 <img
                     src="/img/heroCoverimg2.png"
                     alt=""
-                    className="2xl:w-[571px]  md:w-[324.69px]  lg:w-[343.31px]  hidden md:block 2xl:w-[571px] "
+                    className="2xl:w-[571px]  md:w-[324.69px]  lg:w-[406.04px]  hidden md:block 2xl:w-[571px]"
                     // className="2xl:w-[571px] 2xl:h-[501px] md:w-[324.69px] md:h-[300px] lg:w-[343.31px] lg:h-[400px] hidden md:block 2xl:w-[571px] h-[501px]"
                 />
             </div>

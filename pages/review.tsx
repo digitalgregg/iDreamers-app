@@ -19,7 +19,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-K9ZR5ZP');`}
             </Script>
 
-            <Meta title="Review - iDreamers App" />
+            <Meta title="Review - iDreamers Corp" />
             <div className="bg-[#F3F0FC] w-[100%] h-[auto] sticky top-0 z-50 ">
                 <Header
                     bgColor="#7253d9"

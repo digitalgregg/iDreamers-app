@@ -52,7 +52,7 @@ const ClientReview = () => {
                                                 </div>
                                             </div>
                                             <div className="4xl:ml-[20px]">
-                                                <p className="4xl:w-[900px]  lg:w-[810px] md:w-[600px] mx-auto font-medium lg:text-[20px] text-[16px] lg:leading-[32.4px] text-[#4E5256] mt-[-15px] leading-[25.92px] w-[85%] px-[20px] ">
+                                                <p className="4xl:w-[900px]  xl:w-[810px] lg:w-[740px] md:w-[600px] mx-auto font-medium lg:text-[20px] text-[16px] lg:leading-[32.4px] text-[#4E5256] mt-[-15px] leading-[25.92px] w-[85%] px-[20px] ">
                                                     {item.review}
                                                 </p>
                                             </div>
