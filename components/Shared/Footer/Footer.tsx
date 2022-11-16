@@ -63,11 +63,13 @@ const Footer = () => {
                     lg:pt-[89.74px] pb-[50.56px] xs:pb-[62.56px] md:pb-[122.96px] lg:pb-[122.96px] 2xl:pb-[122.96px] 4xl:pb-[80.96px]"
                     >
                         <div className="">
-                            <img
-                                src="/img/footer-logo.svg"
-                                alt="logo"
-                                className="4xl:w-[75px] 4xl:h-[75px]"
-                            />
+                            <a href="/">
+                                <img
+                                    src="/img/footer-logo.svg"
+                                    alt="logo"
+                                    className="4xl:w-[75px] 4xl:h-[75px]"
+                                />
+                            </a>
                             <div className="mt-[26px]">
                                 <a
                                     href="mailto:administration@idreamers.com"
@@ -142,7 +144,7 @@ const Footer = () => {
                                 <img
                                     src="/img/googleplay.svg"
                                     alt="googleplay"
-                                    className="cursor-pointer mb-[33px]"
+                                    className="cursor-pointer mb-[33px] hover:opacity-[0.7]"
                                 />
                             </a>
                             <a
@@ -153,7 +155,7 @@ const Footer = () => {
                                 <img
                                     src="/img/appstore.svg"
                                     alt="appstore"
-                                    className="cursor-pointer"
+                                    className="cursor-pointer hover:opacity-[0.7]"
                                 />
                             </a>
                         </div>
