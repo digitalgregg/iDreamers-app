@@ -38,7 +38,7 @@ const Features = () => {
             )}
         >
             <div className="relative md:w-[645px] lg:w-[900px] 2xl:w-[1168px] 4xl:w-[1440px] mx-auto">
-                <h1 className="4xl:text-[48px] 4xl:font-extrabold text-primary 4xl:leading-[65.57px] md:text-[50px] md:font-bold hidden md:block md:mb-[40px] 4xl:mb-[47px]">
+                <h1 className="4xl:text-[48px] 4xl:font-extrabold text-primary 4xl:leading-[65.57px] lg:text-[48px] md:text-[50px] md:font-bold hidden md:block md:mb-[40px] 4xl:mb-[47px]">
                     Why iDreamers?
                 </h1>
 
