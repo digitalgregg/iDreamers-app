@@ -148,7 +148,7 @@ const CreatedBy = () => {
                             </div>
                         </div>
                         {/* 3rd section  */}
-                        <div className="flex flex-col gap-[98px] md:gap-[62px] justify-start items-start ">
+                        <div className="flex flex-col gap-[98px] md:gap-[62px] justify-start items-start  ">
                             <div
                                 onClick={() => setCount(3)}
                                 className={classNames(
