@@ -70,27 +70,27 @@ export const reviewData = [
 export const imgurl = [
     {
         id: 0,
-        url: "/img/screenDemo.svg",
+        url: "/sliderImg/brainstorm.svg",
     },
     {
         id: 1,
-        url: "/img/demoimg1.svg",
+        url: "/sliderImg/supportOterdream.svg",
     },
     {
         id: 2,
-        url: "/img/screenDemo.svg",
+        url: "/sliderImg/buildSupport.svg",
     },
     {
         id: 3,
-        url: "/img/demoimg1.svg",
+        url: "/sliderImg/trackmanage.svg",
     },
     {
         id: 4,
-        url: "/img/screenDemo.svg",
+        url: "/sliderImg/communicate.svg",
     },
     {
         id: 5,
-        url: "img/demoimg1.svg",
+        url: "sliderImg/trackmanage.svg",
     },
 ];
 
@@ -164,5 +164,44 @@ export const solutionData = [
     {
         id: 1,
         description: "Why isn’t there a better alternative?",
+    },
+];
+
+export const socilaFooterIcon = [
+    {
+        id: 1,
+        imgURL: "/img/Facebook.svg",
+        link: "https://www.facebook.com/iDreamers/",
+        alt: "facebook",
+    },
+    {
+        id: 2,
+        imgURL: "/img/Instagram.svg",
+        link: "https://www.instagram.com/idreamerscorp/",
+        alt: "Instagram",
+    },
+    {
+        id: 3,
+        imgURL: "/img/Twitter.svg",
+        link: "https://twitter.com/iDreamersLA",
+        alt: "Twitter",
+    },
+    {
+        id: 4,
+        imgURL: "/img/pinterest.svg",
+        link: "https://www.pinterest.com/idreamerscom",
+        alt: "pinterest",
+    },
+    {
+        id: 5,
+        imgURL: "/img/youtubeIconf.svg",
+        link: "https://www.youtube.com/watch?v=m2ECVPF8npU",
+        alt: "Youtube",
+    },
+    {
+        id: 6,
+        imgURL: "/img/linkedinIcon.svg",
+        link: "https://www.linkedin.com/company/idreamers",
+        alt: "linkedin",
     },
 ];

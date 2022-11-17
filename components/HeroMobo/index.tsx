@@ -48,7 +48,7 @@ const HeroMobo = () => {
                                     <img
                                         src={`${item.url}`}
                                         alt=""
-                                        className="absolute w-[170px] h-[375px] bottom-[0px] left-[10px]  z-10"
+                                        className="absolute w-[170px] h-[366px] bottom-[8px] left-[9.5px]  z-10"
                                     />
                                 )}
                             </div>

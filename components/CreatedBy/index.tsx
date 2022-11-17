@@ -140,7 +140,7 @@ const CreatedBy = () => {
                                             <img
                                                 src={`${item.url}`}
                                                 alt=""
-                                                className="absolute 2xl:top-[-22px] lg:top-[-70px] md:top-[-45px] lg:right-[15.5%] 2xl:right-[24%] 2xl:w-[315px] 2xl:h-[645px] z-10 lg:w-[250px] lg:h-[500px] md:w-[158.69px] md:h-[330px] md:right-[18%]"
+                                                className="absolute 2xl:top-[-16px] lg:top-[-68px] md:top-[-43px] lg:right-[60px] 2xl:right-[150px] 2xl:w-[315px] 2xl:h-[640px] z-10 lg:w-[250px] lg:h-[494px] md:w-[158.69px] md:h-[325px] md:right-[18%] rounded-[8px]"
                                             />
                                         )}
                                     </div>
@@ -148,7 +148,7 @@ const CreatedBy = () => {
                             </div>
                         </div>
                         {/* 3rd section  */}
-                        <div className="flex flex-col gap-[98px] md:gap-[62px] justify-start items-start ">
+                        <div className="flex flex-col gap-[98px] md:gap-[62px] justify-start items-start  ">
                             <div
                                 onClick={() => setCount(3)}
                                 className={classNames(
