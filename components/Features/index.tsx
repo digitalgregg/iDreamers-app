@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FakeData } from "../../utils/fakeData";
 import classNames from "classnames";
 import CustomSlider from "../CustomSlider";
@@ -28,8 +28,20 @@ const titles = [
 ];
 
 const Features = () => {
-    const [sliderCount, setSliderCount] = useState();
+    // const [sliderCount, setSliderCount] = useState(0);
     const [current, setCurrent] = useAtom(currentCount_state);
+
+    useEffect(() => {
+        const setTimeoutFun = setTimeout(() => {
+            if (current === 3) {
+                setCurrent(0);
+            } else {
+                setCurrent(current + 1);
+            }
+            console.log(current);
+        }, 10000);
+    }, [current]);
+
     return (
         <div
             className={classNames(
@@ -47,7 +59,7 @@ const Features = () => {
                         <ul
                             key={title.id}
                             className={classNames(
-                                title.id === sliderCount
+                                title.id === current
                                     ? "md:border-b-[3px] border-[#866EE1] z-10 border-l-[5px] md:border-l-0 rounded-[2px] md:rounded-0 ml-[-5px] md:ml-0"
                                     : "hover:border-[#866EE1]  border-l-[5px] md:border-l-0 ml-[-5px] md:ml-0"
                             )}
@@ -55,7 +67,7 @@ const Features = () => {
                             <li
                                 onClick={() => setCurrent(title.id)}
                                 className={classNames(
-                                    title.id === sliderCount
+                                    title.id === current
                                         ? "md:text-[#866EE1] cursor-pointer text-[#866EE1] lg:text-[18px] text-[20px] md:text-[12px] 2xl:text-[20px] 2xl:font-bold py-[12px] px-12 md:px-0"
                                         : "md:text-[#B6A8ED] cursor-pointer lg:text-[18px] text-[20px] md:text-[12px] 2xl:text-[20px] 2xl:font-bold py-[12px] px-12 md:px-0 hover:text-[#866EE1]"
                                 )}
@@ -70,12 +82,13 @@ const Features = () => {
             <CustomSlider
                 // label="idreamers"
                 Slideslength={FakeData}
-                count={(e: any) => setSliderCount(e)}
+                count={(e: any) => setCurrent(e)}
+                // sliderCount={sliderCount}
             >
                 {FakeData.map((item, index) => {
                     return (
                         <div key={index}>
-                            {index === sliderCount && (
+                            {index === current && (
                                 <div className=" flex  gap-[20px] md:gap-[28px] lg:gap-[39px] 2xl:gap-[119px] 4xl:gap-[200px] items-center justify-center md:mt-[50px] lg:mt-[77px] 4xl:mt-[86px] mt-[50px]">
                                     <img
                                         src={item.img}
