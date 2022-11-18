@@ -16,20 +16,11 @@ const GooglePlayReview = () => {
     return (
         <div
             className={classNames(
-                "mt-[86px] mx-auto items-center flex flex-col overflow-hidden mb-[113px]"
+                "mt-[86px] mx-auto items-center flex flex-col overflow-hidden mb-[113px] w-[100%] px-[20px]"
             )}
         >
-            {/* {loading === true && <h1>Loading.....</h1>} */}
-            <Script
-                onLoad={(e: any) => handleLoading(e)}
-                src="https://apps.elfsight.com/p/platform.js"
-            ></Script>
-            <div
-                className={classNames(
-                    "elfsight-app-15ca665a-7ccc-4b52-ae53-2029736bbebc",
-                    `${containerStyle}`
-                )}
-            ></div>
+            <Script src="https://apps.elfsight.com/p/platform.js"></Script>
+            <div className="elfsight-app-a77a34fc-624f-4584-8c03-980467bd9011 max-w-[1031px] min-w-[85%] mx-auto"></div>
         </div>
     );
 };

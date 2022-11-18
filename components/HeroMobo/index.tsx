@@ -38,7 +38,7 @@ const HeroMobo = () => {
                         <div className="w-[189px] h-[382px] relative pl-[20px]">
                             <img
                                 src="/img/iphoneImg.svg"
-                                className="w-[189px] h-[382px] z-50 absolute  top-0 left-0 absolute "
+                                className="w-[189px] h-[382px] z-40 absolute  top-0 left-0 absolute "
                                 alt=""
                             />
                         </div>
@@ -48,7 +48,7 @@ const HeroMobo = () => {
                                     <img
                                         src={`${item.url}`}
                                         alt=""
-                                        className="absolute w-[170px] h-[375px] bottom-[0px] left-[10px]  z-10"
+                                        className="absolute w-[170px] h-[366px] bottom-[8px] left-[9.5px]  z-10"
                                     />
                                 )}
                             </div>

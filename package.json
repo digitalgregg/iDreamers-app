@@ -1,5 +1,5 @@
 {
-  "name": "rpc-on-demand-advisors-client",
+  "name": "idreamers-corp",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -20,6 +20,8 @@
     "react": "^18.2.0",
     "react-div-100vh": "^0.7.0",
     "react-dom": "18.2.0",
+    "react-google-recaptcha": "^2.1.0",
+    "react-google-recaptcha-v3": "^1.10.0",
     "react-hook-form": "^7.37.0",
     "react-mailchimp-subscribe": "^2.1.3",
     "react-modal": "^3.15.1",
@@ -43,6 +45,7 @@
     "@types/react-copy-to-clipboard": "^5.0.4",
     "@types/react-date-range": "^1.4.4",
     "@types/react-dom": "18.0.6",
+    "@types/react-google-recaptcha": "^2.1.5",
     "@types/react-mailchimp-subscribe": "^2.1.1",
     "@types/react-modal": "^3.13.1",
     "@types/react-outside-click-handler": "^1.3.1",

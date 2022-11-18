@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { currentCount_state } from "../../state";
 
 const CustomSlider = ({ children, ...props }: any) => {
-    const [current,setCurrent] = useAtom(currentCount_state)
+    const [current, setCurrent] = useAtom(currentCount_state);
     const [active, setActive] = useState(false);
     const [currentLength, setCurrentLength] = useState(false);
     const timeout = useRef(null);
@@ -37,7 +37,7 @@ const CustomSlider = ({ children, ...props }: any) => {
     return (
         <div className="w-full ">
             <div className="">{children}</div>
-            <div className=" pt-[30px] flex flex-row justify-start items-center gap-[22px] mx-auto  w-[100px] ">
+            <div className=" pt-[30px] flex flex-row justify-start items-center gap-[22px] mx-auto  arrow  w-[10 0px] xs:w-[200px] md:w-[260px] lg:w-[345px] 4xl:w-[255px]">
                 {/* <Button  icon="next" /> */}
                 <button
                     onClick={prevSlide}

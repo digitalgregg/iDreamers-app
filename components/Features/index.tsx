@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FakeData } from "../../utils/fakeData";
 import classNames from "classnames";
 import CustomSlider from "../CustomSlider";
@@ -11,25 +11,37 @@ const container =
 const titles = [
     {
         id: 0,
-        title: "Achieve your Dreams",
+        title: "Structure Your Dreams",
     },
     {
         id: 1,
-        title: "Track & manage your dream life",
+        title: "Fund Your Dreams",
     },
     {
         id: 2,
-        title: "Support other Dreamers",
+        title: "Support Others’ Dreams",
     },
     {
         id: 3,
-        title: "100% Secure Platform",
+        title: "Track & Manage Dreams",
     },
 ];
 
 const Features = () => {
-    const [sliderCount, setSliderCount] = useState();
+    // const [sliderCount, setSliderCount] = useState(0);
     const [current, setCurrent] = useAtom(currentCount_state);
+
+    useEffect(() => {
+        const setTimeoutFun = setTimeout(() => {
+            if (current === 3) {
+                setCurrent(0);
+            } else {
+                setCurrent(current + 1);
+            }
+            console.log(current);
+        }, 10000);
+    }, [current]);
+
     return (
         <div
             className={classNames(
@@ -37,25 +49,25 @@ const Features = () => {
                 `${container}`
             )}
         >
-            <div className="relative">
-                <h1 className="4xl:text-[48px] 4xl:font-extrabold text-primary 4xl:leading-[65.57px] md:text-[50px] md:font-bold hidden md:block md:mb-[40px] 4xl:mb-[47px]">
-                    Features
+            <div className="relative md:w-[645px] lg:w-[900px] 2xl:w-[1168px] 4xl:w-[1440px] mx-auto">
+                <h1 className="4xl:text-[48px] 4xl:font-extrabold text-primary 4xl:leading-[65.57px] lg:text-[48px] md:text-[50px] md:font-bold hidden md:block md:mb-[40px] 4xl:mb-[47px]">
+                    Why iDreamers?
                 </h1>
 
-                <div className="flex flex-col md:flex-row 4xl:gap-[158px] 2xl:gap-[50px] md:gap-[29px] gap-0  border-l-[5px]  md:border-l-0 md:rounded-0 rounded-[2px]  border-[#DBD3F6]">
+                <div className="flex flex-col md:flex-row 4xl:gap-[205px] 2xl:gap-[110px] md:gap-[49px] lg:gap-[53px] gap-0  border-l-[5px]  md:border-l-0 md:rounded-0 rounded-[2px]  border-[#DBD3F6]">
                     {titles?.map((title: any) => (
                         <ul
                             key={title.id}
                             className={classNames(
-                                title.id === sliderCount
+                                title.id === current
                                     ? "md:border-b-[3px] border-[#866EE1] z-10 border-l-[5px] md:border-l-0 rounded-[2px] md:rounded-0 ml-[-5px] md:ml-0"
-                                    : "hover:border-[#866EE1] md:border-b-[3px] border-l-[5px] md:border-l-0 ml-[-5px] md:ml-0"
+                                    : "hover:border-[#866EE1]  border-l-[5px] md:border-l-0 ml-[-5px] md:ml-0"
                             )}
                         >
                             <li
                                 onClick={() => setCurrent(title.id)}
                                 className={classNames(
-                                    title.id === sliderCount
+                                    title.id === current
                                         ? "md:text-[#866EE1] cursor-pointer text-[#866EE1] lg:text-[18px] text-[20px] md:text-[12px] 2xl:text-[20px] 2xl:font-bold py-[12px] px-12 md:px-0"
                                         : "md:text-[#B6A8ED] cursor-pointer lg:text-[18px] text-[20px] md:text-[12px] 2xl:text-[20px] 2xl:font-bold py-[12px] px-12 md:px-0 hover:text-[#866EE1]"
                                 )}
@@ -64,18 +76,19 @@ const Features = () => {
                             </li>
                         </ul>
                     ))}
+                    <div className="border-b-[2px] -z-10  border-[#E9ECF0] w-[638px] lg:w-[900px] 2xl:w-[1150px] 4xl:w-[1440px] h-[4px] absolute bottom-[0px] left-0 hidden md:block"></div>
                 </div>
-                <div className="border-b-[2px] -z-10  border-[#E9ECF0] w-[623px] lg:w-[900px] 2xl:w-[1100px] 4xl:w-[1440px] h-[4px] absolute bottom-[0px] left-0 hidden md:block"></div>
             </div>
             <CustomSlider
                 // label="idreamers"
                 Slideslength={FakeData}
-                count={(e: any) => setSliderCount(e)}
+                count={(e: any) => setCurrent(e)}
+                // sliderCount={sliderCount}
             >
                 {FakeData.map((item, index) => {
                     return (
                         <div key={index}>
-                            {index === sliderCount && (
+                            {index === current && (
                                 <div className=" flex  gap-[20px] md:gap-[28px] lg:gap-[39px] 2xl:gap-[119px] 4xl:gap-[200px] items-center justify-center md:mt-[50px] lg:mt-[77px] 4xl:mt-[86px] mt-[50px]">
                                     <img
                                         src={item.img}
