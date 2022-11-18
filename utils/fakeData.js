@@ -90,7 +90,7 @@ export const imgurl = [
     },
     {
         id: 5,
-        url: "sliderImg/trackmanage.svg",
+        url: "sliderImg/secureimg.svg",
     },
 ];
 
