@@ -135,6 +135,7 @@ const Footer = () => {
                                 href="https://play.google.com/store/apps/details?id=com.idreamers.system&hl=en_US&gl=US"
                                 rel="noreferrer"
                                 target="_blank"
+                                className="flex justify-center xs:justify-start"
                             >
                                 <img
                                     src="/img/googleplay.svg"
@@ -146,6 +147,7 @@ const Footer = () => {
                                 href="https://apps.apple.com/us/app/idreamers/id1633296747"
                                 rel="noreferrer"
                                 target="_blank"
+                                className="flex justify-center xs:justify-start"
                             >
                                 <img
                                     src="/img/appstore.svg"
