@@ -4,7 +4,7 @@ import QuestionCard from "./QuestionCard";
 const questionsData = [
     {
         question: "If you can dream it, you can do it. We can help.",
-        answer: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+        answer: "Idreamers app Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
     },
     {
         question: "What Does The iDreamers App Do?",
