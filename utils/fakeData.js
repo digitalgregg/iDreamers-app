@@ -107,7 +107,7 @@ export const listItem = [
     },
     {
         id: 2,
-        title: "100% Srcure Cloud Platform",
+        title: "100% Secure Cloud Platform",
         url: "/img/secure.svg",
     },
     {
