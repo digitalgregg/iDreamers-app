@@ -17,21 +17,21 @@ const FooterMenuTwo = [
     },
     {
         title: "Review",
-        url: "review",
+        url: "/review",
     },
     {
         title: "Contact",
-        url: "contact",
+        url: "/contact",
     },
 ];
 const FooterMenuThree = [
     {
         title: "Terms & Conditions",
-        url: "terms-condition",
+        url: "/terms-condition",
     },
     {
         title: " Privacy Policy",
-        url: "privacy-policy",
+        url: "/privacy-policy",
     },
 ];
 
