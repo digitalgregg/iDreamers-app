@@ -46,6 +46,16 @@ const socialIcon = [
         img: "/img/instraimg.svg",
         link: "https://www.instagram.com/idreamerscorp/",
     },
+    {
+        id: 5,
+        img: "/img/pinterestc.svg",
+        link: "https://www.pinterest.com/idreamerscom",
+    },
+    {
+        id: 6,
+        img: "/img/youtubec.svg",
+        link: "https://www.youtube.com/watch?v=m2ECVPF8npU",
+    },
 ];
 const ContactDetail = () => {
     return (
@@ -73,10 +83,14 @@ const ContactDetail = () => {
                                 {data.description}
                             </h3>
                             {data.isSocialIcon === true && (
-                                <div className="flex justify-center gap-[20px]">
+                                <div className="flex justify-center gap-[8px]">
                                     {socialIcon.map((icon) => (
                                         <span key={icon.id}>
-                                            <a href={icon.link}>
+                                            <a
+                                                href={icon.link}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
                                                 <img
                                                     src={icon.img}
                                                     alt="image"
